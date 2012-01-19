@@ -1,0 +1,6 @@
+usr/bin/panflute-daemon
+usr/bin/panflute-launch-player
+usr/lib/python*.*/dist-packages/panflute/daemon
+usr/lib/python*.*/dist-packages/panflute/*.py
+usr/share/dbus-1/services
+usr/share/mateconf/schemas

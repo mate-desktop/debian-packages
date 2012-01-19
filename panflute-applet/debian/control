@@ -1,0 +1,88 @@
+Source: panflute
+Section: python
+Priority: optional
+Maintainer: Benjamin Valentin <benpicco@zedat.fu-berlin.de>
+Build-Depends: cdbs,
+               debhelper (>= 7),
+               mate-conf-common,
+               intltool (>= 0.40),
+               libdbus-1-dev,
+               pkg-config (>= 0.9.0),
+               python (>= 2.6),
+               python-dbus (>= 0.80),
+               python-mate-desktop,
+               python-gobject-dev,
+               python-gtk2-dev (>= 2.16),
+               python-mpd,
+               python-notify,
+               python-numpy,
+               python-support (>= 0.5.3),
+               python-xmmsclient
+Standards-Version: 3.8.4.0
+Homepage: https://launchpad.net/panflute/
+XS-Python-Version: >= 2.6
+
+Package: panflute-daemon
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ${python:Depends},
+         python-dbus (>= 0.80),
+         python-mate,
+         python-gobject
+Recommends: rhythmbox (>= 0.9.2) |
+            amarok (>= 1.4) |
+            audacious |
+            banshee (>= 1.0) |
+            exaile |
+            guayadeque |
+            listen |
+            moc |
+            muine |
+            python-mpd |
+            python-xmmsclient |
+            quodlibet |
+            vlc (>= 0.9.0)
+XB-Python-Version: ${python:Versions}
+Description: MPRIS interface to control several music players
+ Panflute provides a generic MPRIS interface to control a variety of
+ music players, including many that do not implemented MPRIS themselves.
+ This allows developers to create programs that interact with many
+ different players, without needing to worry about the details of each
+ player's particular interface.  Panflute also provides extensions for
+ features not included in the MPRIS specification.
+
+Package: panflute-applet
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ${python:Depends},
+         mate-panel,
+         panflute-daemon (= ${binary:Version}),
+         python-dbus (>= 0.80),
+         python-mate,
+         python-mate-desktop,
+         python-gobject,
+         python-gtk2 (>= 2.16),
+         python-numpy
+Recommends: python-notify
+XB-Python-Version: ${python:Versions}
+Description: MATE panel applet to control several music players
+ Panflute provides a MATE panel applet for controlling a variety of music
+ players.  The applet provides playback controls and information about the
+ current song.
+
+Package: panflute-tests
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ${python:Depends},
+         panflute-daemon (= ${binary:Version}),
+         python-dbus (>= 0.80),
+         python-gobject,
+         python-gtk2 (>= 2.16)
+XB-Python-Version: ${python:Versions}
+Description: Testing and debugging tools for Panflute
+ This package constains testing and debugging tools for Panflute.  It is
+ only of interest to people doing Panflute development.  You almost
+ certainly do not need this package.

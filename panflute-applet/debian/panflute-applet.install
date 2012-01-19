@@ -1,0 +1,7 @@
+usr/lib/matecomponent/servers
+usr/lib/mate-applets
+usr/lib/python*.*/dist-packages/panflute/applet
+usr/share/mate-2.0/ui
+usr/share/locale
+usr/share/panflute/*.svg
+usr/share/panflute/preferences.ui
