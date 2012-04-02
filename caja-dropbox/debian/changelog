@@ -1,0 +1,118 @@
+caja-dropbox (0.7.1-2) unstable; urgency=low
+
+  * Update watch file to cope with changes on the dropbox website.
+  * Update copyright file to fix 2 syntax errors and to add a disclaimer
+    concerning the fact that the package is in non-free. Thanks
+    to Charles Plessy for the patch. Closes: #650735
+  * Split upstreamable changes from use-var-lib-dropbox.patch into
+    do-not-hardcode-dropboxd-path.patch.
+  * Split non-upstream changes from dropbox-update.patch into
+    non-interactive-update.patch.
+  * Update use-var-lib-dropbox.patch to ensure that the extracted files are
+    owned by root.
+  * Stop dropbox in the prerm and not in the postrm since the program
+    is no longer available at that point.
+  * New patch add-http-proxy-option.patch to force the http_proxy environment
+    variable.
+  * Update use-pkexec-to-get-root-rights.patch to forward the http_proxy
+    environment variable across pkexec. Closes: #651065
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Wed, 28 Dec 2011 11:35:56 +0100
+
+caja-dropbox (0.7.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Do not touch /var/lib/update-notifier/dpkg-run-stamp as
+    /etc/apt/apt.conf.d/99update-notifier does it for us anyway at the end of
+    the APT run. Manual installations of the package will not get the
+    message but that's ok.
+  * Drop /var/lib/update-notifier/user.d/dropbox-{re,}start-required
+    on removal since we create them in the postinst and they
+    might still be there if update-notifier is not installed.
+    Closes: #648215
+  * Drop fix-path-of-desktop-file.patch, applied upstream.
+  * Refresh all other patches.
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Tue, 22 Nov 2011 11:04:25 +0100
+
+caja-dropbox (0.7.0-2) unstable; urgency=low
+
+  * Fix the distribution in the changelog entry for version 0.7.0-1
+    (UNRELEASED → unstable).
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Sat, 29 Oct 2011 16:28:59 +0200
+
+caja-dropbox (0.7.0-1) unstable; urgency=low
+
+  * New upstream version.
+  * Drop use-system-rst2man.patch, merged upstream.
+  * Refresh all other patches.
+  * This version implements a GPG verification of the tarball
+    downloaded from dropbox.com. Closes: #632771
+    The wrapper needs python-gpgme to perform this check, so
+    add it to the dependencies.
+  * Switch to debhelper compatibility level 9 in order to benefit
+    from the hardening build flags.
+  * Use dh --with=python2 since previous change dropped usage of
+    python-support.
+  * Use -Wl,--as-needed to drop unnecessary libraries linked into the plugin.
+    This requires dh-autoreconf's ability to patch ltmain.sh. Thus add
+    it to the Build-Depends field.
+  * New patch to remove files that will be overwritten by the unpack
+    to avoid failures with ETXTBUSY. LP: #818014
+  * New patch to ask for root rights when we have to install dropbox as
+    user. LP: #821212
+    Add dependency on policykit-1 since the patch makes use of pkexec.
+  * Thanks to this, we don't have to ensure that the download succeeds
+    in the postinst. LP: #876340
+  * Update fix-path-of-desktop-file.patch to be upstreamable.
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Fri, 28 Oct 2011 20:32:45 +0200
+
+caja-dropbox (0.6.9-1) unstable; urgency=low
+
+  * New upstream version.
+  * Uses system's rst2man instead of the embedded one. Avoids a build
+    failure once python-docutils 0.8 is uploaded. Thanks to Jakub Wilk.
+    Closes: #639030
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Wed, 07 Sep 2011 10:17:02 +0200
+
+caja-dropbox (0.6.8-1) unstable; urgency=low
+
+  * New upstream version.
+  * Fix the watch file to not hardcode the version.
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Fri, 15 Jul 2011 10:51:10 +0200
+
+caja-dropbox (0.6.7-3) unstable; urgency=medium
+
+  * Add a Suggests: caja.
+  * Drop usage of https as urllib2 doesn't seem to correctly use the
+    http proxy for https download. Upstream will soon provide GPG
+    signatures so that this is not a big deal. Closes: #631300
+  * Medium urgency to get the fixed version in testing.
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Wed, 29 Jun 2011 11:34:46 +0200
+
+caja-dropbox (0.6.7-2) unstable; urgency=low
+
+  * Add lintian override for the use of killall.
+  * Include full license for CC-BY-ND.
+  * Switch to HTTPS for the download, but we still have to implement
+    HTTPS certificate validation.
+  * Add the "XS-Autobuild: yes" header as per
+    http://lists.debian.org/debian-devel-announce/2006/11/msg00012.html
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Thu, 09 Jun 2011 09:02:14 +0200
+
+caja-dropbox (0.6.7-1) unstable; urgency=low
+
+  * Initial release. Closes: #544499, #613788
+  * The package goes in non-free because the pictures are non-free (CC-BY-ND)
+    even if the code is GPL. Otherwise it could have gone into contrib since
+    it needs the proprietary dropbox binary to work.
+  * Build the package only on i386 and amd64 since other architectures are not
+    supported by Dropbox.
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Sat, 04 Jun 2011 16:07:54 +0200
