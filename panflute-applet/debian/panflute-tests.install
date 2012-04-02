@@ -1,0 +1,7 @@
+usr/bin/panflute-debugger
+usr/bin/panflute-tests
+usr/lib/python*.*/dist-packages/panflute/debugger
+usr/lib/python*.*/dist-packages/panflute/tests
+usr/share/panflute/*.ogg
+usr/share/panflute/debugger.ui
+usr/share/panflute/tester.ui
