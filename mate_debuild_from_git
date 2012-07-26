@@ -1,0 +1,130 @@
+#!/usr/bin/env python
+
+# -*- coding: utf-8 -*-
+#
+#  untitled.py
+#  
+#  Copyright 2012 Oz Nahum <nahumoz@gmail.com>
+#  
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#  
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#  
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+
+
+"""
+Little Helper script to build Mate Packages from github sources.
+Intended for people with very little knowledege of Debian Packaging, 
+but still want to try building packages.
+
+usage:
+./mate_debuild_from_git <mate-component>
+e.g.
+~ $ ./mate_debuild_from_git mate-doc-utils
+produces:
+mate-doc-utils_1.4.0-1.1_all.deb        
+mate-doc-utils_1.4.0-1.1_i386.changes    
+mate-doc-utils-gnome_1.4.0-1.1_all.deb
+mate-calc_1.4.0-1.1_i386.build    
+mate-doc-utils_1.4.0-1.1.debian.tar.gz  
+mate-doc-utils_1.4.0-1.1_source.build    
+mate-calc_1.4.0-1.1_source.build  
+mate-doc-utils_1.4.0-1.1.dsc            
+mate-doc-utils_1.4.0-1.1_source.changes  
+"""
+
+import optparse
+import os,shutil
+import sys, time
+import subprocess as sp
+
+
+
+
+DEBFULLNAME="Oz Nahum"
+DEBMAIL="nahumoz@gmail.com"
+VERSION = "1.4.0" 
+DEB_VERSION = "1.1" 
+
+pkgname = sys.argv[1]
+
+DEBIANFILESPATH="/home/ozn/debian-packages/"
+
+base_pkgnames = ["libmate", "libmatewnck", "libmatecanvas", "libmatecomponent", "libmatecomponentui", "libmatekbd", "libmatekeyring", "libmatenotify", "libmateui", "libmateweather", "mate-backgrounds", "mate-common", "mate-conf", "mate-control-center", "mate-corba", "mate-desktop", "mate-dialogs", "mate-display-manager", "mate-doc-utils", "mate-file-manager", "mate-icon-theme", "mate-keyring", "mate-menus", "mate-mime-data", "mate-notification-daemon", "mate-panel", "mate-polkit", "mate-session-manager", "mate-settings-daemon", "mate-themes", "mate-vfs", "mate-window-manager"]
+extra_pkgnames = ["mate-desktop-environment", "mate-power-manager", "mate-video-player", "mate-bluetooth", "mate-disk-utility", "mate-indicator-applet", "music-applet-2.5.1", "xfce4-xfapplet-plugin", "mate-media", "python-caja", "mate-character-map", "mate-extract", "mate-menu-editor", "python-corba", "mate-conf-dbus", "mate-file-manager-open-terminal", "mate-pl-parser", "python-mate", "mate-conf-editor", "mate-file-manager-sendto", "mate-policykit", "mate-utils", "python-mate-desktop"]
+sep_extra_pkgnames = ["mate-applets", "mate-calc", "mate-document-viewer", "mate-image-viewer", "mate-screensaver", "mate-system-monitor", "mate-system-tools", "mate-text-editor", "mate-terminal"]
+stefano_pkgnames = ["mate-netspeed", "mate-sensors-applet"]
+
+base_pkgnames.sort()
+extra_pkgnames.sort()
+sep_extra_pkgnames.sort()
+stefano_pkgnames.sort()
+
+GITCLONEBASE="git clone git://github.com/mate-desktop/"
+
+if (not pkgname in base_pkgnames) and (not pkgname in extra_pkgnames) and (not pkgname in sep_extra_pkgnames) and (not pkgname in stefano_pkgnames):
+    print "E: Invalid package name!"
+    sys.exit(1)
+
+ROOT_DIR = os.getcwd()
+SOURCE_DIR=pkgname
+
+# get the sources
+if os.path.exists(SOURCE_DIR):
+    print "PULLING LATEST SOURCE CODE CHANGES FROM FROM GITHUB..."
+    os.chdir(SOURCE_DIR)
+    sp.call("git reset --hard ", shell=True)
+    sp.call("git clean -f -x -d ", shell=True)
+    sp.call("git pull", shell=True)
+    sp.call("git checkout "+pkgname+"-"+VERSION, shell=True)
+else:
+	os.mkdir(SOURCE_DIR)
+	sp.call(GITCLONEBASE+pkgname, shell=True)
+	os.chdir(SOURCE_DIR)
+	sp.call("git checkout "+pkgname+"-"+VERSION, shell=True)
+	
+# make a debian style archive
+PREFIX, LABEL = pkgname+"/", pkgname+"-1.4.0"
+TARPREFIX=pkgname+"_1.4.0"+".orig"
+git_archive_command = "git archive --prefix=%s  %s | bzip2 > ../%s.tar.bz2" % (PREFIX, LABEL, TARPREFIX)
+print git_archive_command
+sp.call(git_archive_command, shell=True)
+#import pdb; pdb.set_trace()
+#copy debian sources into the directory
+shutil.copytree(DEBIANFILESPATH+pkgname+"/debian", os.getcwd()+"/debian")
+#add changelog entry
+ss="""
+%(pkgname)s (%(VERSION)s-%(DEB_VERSION)s) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * New upstream release.
+ 
+ -- %(DEBNAME)s <%(MAIL)s>  %(DATE)s
+
+""" % {"pkgname":pkgname, "VERSION":VERSION, "DEB_VERSION":DEB_VERSION, 
+       "DEBNAME":DEBFULLNAME, "MAIL":DEBMAIL, 
+        "DATE":time.strftime("%a, %d %b %Y %T %z")}
+
+
+with open("debian/changelog","r+") as dch:
+	lines = dch.readlines()
+	dch.seek(0)
+	lines=list(ss)+lines
+	dch.writelines(lines[1:])
+
+sp.call("debuild -S -sa",shell="True")
+sp.call("debuild",shell="True")
+sp.call("dh_clean",shell="True")
+
+
+
