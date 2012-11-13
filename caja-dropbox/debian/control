@@ -19,6 +19,7 @@ Depends: procps,
          python-gtk2 (>= 2.12),
          python-gpgme,
          policykit-1,
+         dropbox,
          ${shlibs:Depends},
          ${python:Depends},
          ${misc:Depends}
