@@ -1,3 +1,11 @@
+mate-file-archiver (1.4.1-1) unstable; urgency=low
+
+  * New upstream release.
+    * Fixed a bug that prevented encrypted rar files from being
+      opened.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sat, 17 Nov 2012 18:40:28 -0500
+
 mate-file-archiver (1.4.0-1) unstable; urgency=low
 
   * New upstream release. 
