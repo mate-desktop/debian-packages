@@ -1,3 +1,9 @@
+python-caja (1.4.0-2) unstable; urgency=low
+
+  * Removed python-mate as a dependency.
+
+ -- Scott Balneaves <sbalneav@ltsp.org>  Sun, 18 Nov 2012 09:27:31 -0600
+
 python-caja (1.4.0-1) unstable; urgency=low
 
   * New upstream release. 

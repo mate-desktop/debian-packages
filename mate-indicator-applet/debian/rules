@@ -14,10 +14,5 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
-binary-install/mate-indicator-applet::
-	mkdir -p debian/mate-indicator-applet/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/mate-indicator-applet/usr/share/mateconf/schemas/mate-indicator-applet.schemas" --domain mate-indicator-applet debian/mate-indicator-applet/etc/mateconf/schemas/*.schemas
-	rm -rf debian/mate-indicator-applet/etc/mateconf/schemas/*.schemas
-
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

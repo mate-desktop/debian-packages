@@ -13,11 +13,5 @@ install/caja-open-terminal::
 	rm -f debian/caja-open-terminal/$(shell pkg-config --variable=extensiondir libcaja-extension)/libcaja-open-terminal.la
 	rm -f debian/caja-open-terminal/$(shell pkg-config --variable=extensiondir libcaja-extension)/libcaja-open-terminal.a
 
-binary-install/caja-open-terminal::
-	mkdir -p debian/caja-open-terminal/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/caja-open-terminal/usr/share/mateconf/schemas/caja-open-terminal.schemas" \
-		--domain caja-open-terminal debian/caja-open-terminal/etc/mateconf/schemas/*.schemas
-	rm -rf debian/caja-open-terminal/etc/mateconf/schemas/
-
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
