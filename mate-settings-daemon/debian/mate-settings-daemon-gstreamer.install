@@ -1,8 +1,8 @@
 etc/
 usr/bin/
 usr/include/
-usr/lib/mate-settings-daemon-*/*.mate-settings-plugin
-usr/lib/mate-settings-daemon-*/*.so
+usr/lib/mate-settings-daemon/*.mate-settings-plugin
+usr/lib/mate-settings-daemon/*.so
 usr/lib/pkgconfig/
 usr/share/dbus-1/
 usr/share/glib-2.0/
