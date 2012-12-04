@@ -27,8 +27,6 @@ Build-Depends: cdbs,
                libxxf86vm-dev,
                libgl1-mesa-dev | libgl1-mesa-swx11-dev,
                libmatenotify,
-               libsystemd-login-dev,
-               libsystemd-daemon-dev,
                mate-common
 Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
