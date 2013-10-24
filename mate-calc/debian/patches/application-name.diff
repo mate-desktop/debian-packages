@@ -1,0 +1,9 @@
+--- a/data/mate-calc.desktop.in
++++ b/data/mate-calc.desktop.in
+@@ -1,5 +1,5 @@
+ [Desktop Entry]
+-_Name=MATE Calculator
++_Name=Calculator
+ _GenericName=Calculator
+ _Comment=Perform arithmetic, scientific or financial calculations
+ Exec=mate-calc
