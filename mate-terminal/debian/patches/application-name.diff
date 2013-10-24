@@ -1,0 +1,9 @@
+--- a/mate-terminal.desktop.in.in
++++ b/mate-terminal.desktop.in.in
+@@ -1,5 +1,5 @@
+ [Desktop Entry]
+-_Name=MATE Terminal
++_Name=Terminal
+ _GenericName=Terminal
+ _Comment=Use the command line
+ TryExec=mate-terminal
