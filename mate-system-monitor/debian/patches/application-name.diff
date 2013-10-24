@@ -1,0 +1,18 @@
+--- a/mate-system-monitor.desktop.in
++++ b/mate-system-monitor.desktop.in
+@@ -1,5 +1,5 @@
+ [Desktop Entry]
+-_Name=MATE System Monitor
++_Name=System Monitor
+ _GenericName=System Monitor
+ _Comment=View current processes and monitor system state
+ TryExec=mate-system-monitor
+--- a/mate-system-monitor.desktop.in.in
++++ b/mate-system-monitor.desktop.in.in
+@@ -1,5 +1,5 @@
+ [Desktop Entry]
+-_Name=MATE System Monitor
++_Name=System Monitor
+ _GenericName=System Monitor
+ _Comment=View current processes and monitor system state
+ TryExec=mate-system-monitor
