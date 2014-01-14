@@ -1,1 +1,5 @@
+*.changes
+*.dsc
+*.tar.gz
+*.tar.xz
 .pc
