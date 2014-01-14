@@ -1,0 +1,11 @@
+--- a/debian/control
++++ b/debian/control
+@@ -29,7 +29,7 @@ Description: MATE library to manage keyb
+ Package: libmatekbd-common
+ Architecture: all
+ Depends: ${misc:Depends}
+-Replaces: libmatekbd4 (<< 1.6.1-1)
++Replaces: libmatekbd4 (<< 1.6.1-1), libmatekbd (<< 1.6.1-1)
+ Description: MATE library to manage keyboard configuration (common files)
+  libmatekbd offers an API to manage the keyboard in MATE applications.
+  .
