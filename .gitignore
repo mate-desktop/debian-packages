@@ -2,4 +2,5 @@
 *.dsc
 *.tar.gz
 *.tar.xz
+*.tar.bz2
 .pc
