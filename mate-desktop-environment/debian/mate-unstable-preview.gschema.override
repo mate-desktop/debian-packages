@@ -1,7 +1,0 @@
-[org.mate.Marco.general]
-compositing-manager=true
-center-new-windows=true
-side-by-side-tiling=true
-
-[org.mate.eom.full-screen]
-random=true

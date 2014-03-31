@@ -1,9 +1,0 @@
-#!/bin/sh
-
-case "$1" in
-    remove|purge)
-	if [ -x /usr/bin/apt-key ]; then
-		/usr/bin/apt-key del A10B4DE8
-	fi
-	;;
-esac
