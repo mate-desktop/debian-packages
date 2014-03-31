@@ -1,0 +1,96 @@
+Source: caja-extensions
+Section: x11
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: debhelper (>= 9),
+               libcaja-extension-dev,
+               pkg-config,
+               libgtk2.0-dev,
+               libgupnp-1.0-dev,
+               uuid-dev,
+               libdbus-1-dev,
+               libdbus-glib-1-dev,
+               mate-common,
+Standards-Version: 3.9.5
+Homepage: http://www.mate-desktop.org/
+
+Package: caja-gksu
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         caja-extensions-common (= ${source:Version}),
+Description: privilege granting extension for caja using gksu 
+ The gksu extension for caja allows you to open files with
+ administration privileges using the context menu when browsing your
+ files with caja.
+
+Package: caja-image-converter
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         caja-extensions-common (= ${source:Version}),
+         imagemagick
+Description: Caja extension to mass resize or rotate images
+ This package adds a "Resize Images..." menu item to the context menu of
+ all images. This opens a dialog where you set the desired image size
+ and file name. A click on "Resize" finally resizes the image(s) using
+ ImageMagick's convert tool. 
+
+Package: caja-open-terminal
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         caja-extensions-common (= ${source:Version}),
+Description: caja plugin for opening terminals in arbitrary local paths
+ caja-open-terminal is a proof-of-concept Caja extension
+ which allows you to open a terminal in arbitrary local folders.
+
+Package: caja-sendto
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         caja-extensions-common (= ${source:Version}),
+Suggests: thunderbird | icedove | evolution (>= 2.28) | claws-mail,
+          pidgin (>= 2.0.0) | gajim,
+          python-dbus,
+          mate-bluetooth
+Description: integrates email clients and Pidgin into the Caja file manager
+ The Caja Send To plugin provides the Caja file manager with a context
+ menu component for quickly sending files to given email addresses, contacts
+ on a Pidgin or Gajim instant messaging list, through Thunderbird/Icedove,
+ or through Claws Mail.
+ .
+ Caja Send To also provides the option of compressing the files (tar.bz2,
+ tar.gz, or zip) before sending.
+
+Package: caja-share
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         caja-extensions-common (= ${source:Version}),
+         samba-common-bin
+Description: Allows to quickly share a folder from the Caja file manager
+ Caja share allows you to quickly share a folder from the MATE Caja
+ file manager without requiring root access. It uses Samba, so your folders
+ can be accessed by any operating system.
+
+Package: caja-extensions-common
+Architecture: all
+Depends: ${misc:Depends}
+Description: Caja extensions (common files)
+ Caja extensions.
+ .
+ This package contains the architecture independent files.
+
+Package: caja-extensions-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         caja-gksu (= ${binary:Version}),
+         caja-image-converter (= ${binary:Version}),
+         caja-open-terminal (= ${binary:Version}),
+         caja-sendto (= ${binary:Version}),
+         caja-share (= ${binary:Version}),
+Description: Caja extensions (debugging symbols)
+ Caja extensions

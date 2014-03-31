@@ -1,0 +1,7 @@
+In the context menu of the icon blueman-applet provides in the notification area
+you'll find all possibilities to setup and use your bluetooth devices. Simple
+pairing without the applet can also be achieved by directly invoking
+blueman-manager.
+
+Please note that the NetworkManager plugins do not work with current versions of
+NetworkManager!

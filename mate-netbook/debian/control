@@ -2,17 +2,15 @@ Source: mate-netbook
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: cdbs,
-               debhelper (>= 8),
+Build-Depends: debhelper (>= 9),
                libgtk2.0-dev,
-               libmatepanelapplet-dev,
-               libmatewnck-dev,
+               libmate-panel-applet-dev,
+               libwnck-dev,
                libfakekey-dev,
                libunique-dev,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
+               yelp-tools,
                mate-common
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-netbook

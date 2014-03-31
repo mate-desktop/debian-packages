@@ -1,14 +1,32 @@
-libmatekbd (1.6.1-4) petra; urgency=low
+libmatekbd (1.8.0-0) unstable; urgency=low
 
-  * fix libmatekbd in community repo
+  * New upstream release
 
- -- Frédéric Gaudet <fred@linuxmint.com>  Tue, 14 Jan 2014 13:00:23 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 05 Mar 2014 20:49:19 +0100
 
-libmatekbd (1.6.1-3) unstable; urgency=low
+libmatekbd (1.7.90-1) unstable; urgency=low
 
-  * libmatekbd
+  * New upstream development release
 
- -- Frédéric Gaudet <fred@linuxmint.com>  Tue, 14 Jan 2014 10:51:45 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 14 Feb 2014 19:43:57 +0100
+
+libmatekbd (1.7.2-1) unstable; urgency=medium
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 18 Jan 2014 18:58:34 +0100
+
+libmatekbd (1.7.1-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 07 Oct 2013 18:30:56 +0200
+
+libmatekbd (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 18 Jul 2013 00:21:59 +0200
 
 libmatekbd (1.6.1-1) unstable; urgency=low
 

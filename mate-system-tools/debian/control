@@ -3,26 +3,22 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: cdbs (>= 0.4.41),
-               autotools-dev,
-               intltool (>= 0.35.0),
-               debhelper (>= 8),
-               liboobs-1-dev (>= 2.29.91),
-               libgtk2.0-dev (>= 2.16),
-               libglib2.0-dev (>= 2.15.2),
+Build-Depends: intltool (>= 0.35.0),
+               debhelper (>= 9),
+               liboobs-1-dev,
+               libgtk2.0-dev,
+               libglib2.0-dev,
                libpolkit-gobject-1-dev,
                libdbus-1-dev (>= 0.32),
                system-tools-backends-dev (>= 2.9.4),
                gettext,
                libxml-parser-perl,
-               scrollkeeper,
                mate-common,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
+               yelp-tools,
                libmatepolkit-dev,
                libcaja-extension-dev,
                pkg-config
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-system-tools
@@ -31,7 +27,8 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          perl,
          system-tools-backends (>= 2.9.4),
-         mate-polkit
+         mate-polkit,
+         mate-system-tools (= ${source:Version})
 Recommends: mate-control-center
 Suggests: ntp
 Description: Cross-platform configuration utilities for MATE
@@ -51,3 +48,27 @@ Description: Cross-platform configuration utilities for MATE
   - Network options
   - Services
   - Shares (NFS and Samba)
+
+Package: mate-system-tools-common
+Architecture: all
+Depends: ${misc:Depends}
+Replaces: mate-system-tools (<< 1.7.0)
+Description: Cross-platform configuration utilities for MATE (common files)
+ The MATE System Tools are a fully integrated set of tools aimed to make easy
+ the job that means the computer administration on an UNIX or Linux system.
+ They're thought to help from the new Linux or UNIX user to the system
+ administrators.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-system-tools-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-system-tools (= ${binary:Version})
+Description: Cross-platform configuration utilities for MATE (debugging symbols)
+ This package contains debugging symbols for mate-system-tools package
+ It is provided to help debugging problems.
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.

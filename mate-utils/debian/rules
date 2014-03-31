@@ -1,15 +1,19 @@
 #!/usr/bin/make -f
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/rules/utils.mk
-include /usr/share/cdbs/1/class/autotools.mk
+%:
+	dh $@
 
-DEB_DH_INSTALL_ARGS += --list-missing
+override_dh_install:
+	rm -rfv debian/tmp/usr/lib/*/*.la 
+	dh_install --list-missing
 
-DEB_CONFIGURE_EXTRA_FLAGS += --disable-scrollkeeper \
-                             --libexecdir=/usr/lib/mate-utils
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--libexecdir=/usr/lib/mate-utils \
+		--with-gtk=2.0
 
-DEB_CONFIGURE_SCRIPT := ./autogen.sh
+override_dh_strip:
+	dh_strip --dbg-package=mate-utils-dbg
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

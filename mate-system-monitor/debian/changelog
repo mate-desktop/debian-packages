@@ -1,8 +1,26 @@
-mate-system-monitor (1.6.1-1) petra; urgency=low
+mate-system-monitor (1.8.0-0) unstable; urgency=low
 
-  * New upstream version
+  * New upstream release
 
- -- Clement Lefebvre <root@linuxmint.com>  Tue, 01 Oct 2013 14:54:06 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 08 Mar 2014 20:17:22 +0100
+
+mate-system-monitor (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 19 Feb 2014 18:53:05 +0100
+
+mate-system-monitor (1.7.1-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 13 Feb 2014 21:31:43 +0100
+
+mate-system-monitor (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 15 Jan 2014 10:03:58 +0100
 
 mate-system-monitor (1.6.0-1) unstable; urgency=low
 

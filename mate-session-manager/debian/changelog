@@ -1,122 +1,29 @@
-mate-session-manager (1.6.1-1) petra; urgency=low
-
-  * New upstream version
-
- -- Clement Lefebvre <root@linuxmint.com>  Tue, 01 Oct 2013 14:53:21 +0100
-
-mate-session-manager (1.6.0-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 31 Mar 2013 22:57:43 +0200
-
-mate-session-manager (1.5.2-1) unstable; urgency=low
-
-  * New upstream development release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 23 Mar 2013 00:10:47 +0100
-
-mate-session-manager (1.5.1-1) unstable; urgency=low
-
-  * New upstream development release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 08 Feb 2013 00:17:33 +0100
-
-mate-session-manager (1.5.0-1) unstable; urgency=low
-
-  * New upstream development release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 10 Oct 2012 23:48:15 +0200
-
-mate-session-manager (1.4.0-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Steve Zesch <stevezesch2@gmail.com>  Fri, 13 Jul 2012 21:46:07 -0400
-
-mate-session-manager (1.2.0-3) unstable; urgency=low
-
-  * Added postinst and prerm script to have x-session-manager alternative.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 02 Apr 2012 13:58:22 +0200
-
-mate-session-manager (1.2.0-2) unstable; urgency=low
-
-  * Rebuild for precise. 
-
- -- Steve Zesch <stevezesch2@gmail.com>  Fri, 30 Mar 2012 19:57:50 -0400
-
-mate-session-manager (1.2.0-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 29 Feb 2012 22:06:01 +0100
-
-mate-session-manager (1.1.2-2) unstable; urgency=low
-
-  * Fix typo in debian/rules. This was breaking fresh installations.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 17 Jan 2012 01:15:13 +0100
-
-mate-session-manager (1.1.2-1) unstable; urgency=low
-
-  * New upstream bugfix release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 16 Jan 2012 16:03:14 +0100
-
-mate-session-manager (1.1.1-1) unstable; urgency=low
-
-  * New upstream bugfix release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 15 Jan 2012 13:17:42 +0100
-
-mate-session-manager (1.1.0-2) unstable; urgency=low
-
-  * Add debug package.
-  * Remove --enable-splash from configure flags. It
-    was removed in gnome before the fork.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 15 Jan 2012 01:22:00 +0100
-
-mate-session-manager (1.1.0-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 11 Dec 2011 00:43:32 +0100
-
-mate-session-manager (1.0.0-3) unstable; urgency=low
-
-  * Fixed architecture, must be any instead of all.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 11 Nov 2011 11:37:08 +0100
-
-mate-session-manager (1.0.0-2) unstable; urgency=low
-
-  * Fixed debian/ folder.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 06 Nov 2011 00:40:13 +0100
-
-mate-session-manager (1.0.0-1) unstable; urgency=low
+mate-session-manager (1.8.0-0) unstable; urgency=low
 
   * New upstream release
 
- -- Clement Lefebvre <root@linuxmint.com>  Sat, 05 Nov 2011 12:44:49 +0000
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 05 Mar 2014 21:33:26 +0100
 
-mate-session-manager (2011.10.27-3) unstable; urgency=low
+mate-session-manager (1.7.90-2) unstable; urgency=medium
 
-  * Added mateconf-merge-schema in debian/rules.
+  * Add systemd support.
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 28 Oct 2011 22:04:47 +0200
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 27 Feb 2014 20:13:01 +0100
 
-mate-session-manager (2011.10.27-2) unstable; urgency=low
+mate-session-manager (1.7.90-1) unstable; urgency=low
 
-  * Added scripts.
+  * New upstream development release
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 27 Oct 2011 06:53:39 +0200
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 18 Feb 2014 20:34:27 +0100
 
-mate-session-manager (2011.10.27-1) unstable; urgency=low
+mate-session-manager (1.7.2-1) unstable; urgency=low
 
-  * New upstream release.
+  * New upstream development release.
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 27 Oct 2011 01:45:33 +0200
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 13 Feb 2014 10:43:39 +0100
 
+mate-session-manager (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 20 Oct 2013 12:51:19 +0200

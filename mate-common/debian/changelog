@@ -1,8 +1,38 @@
-mate-common (1.6.2-1) petra; urgency=low
+mate-common (1.8.0-0) unstable; urgency=low
 
-  * New upstream version
+  * New upstream release.
 
- -- Clement Lefebvre <root@linuxmint.com>  Tue, 01 Oct 2013 14:52:39 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 05 Mar 2014 20:26:21 +0100
+
+mate-common (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 14 Feb 2014 18:52:18 +0100
+
+mate-common (1.7.3-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 13 Feb 2014 09:36:18 +0100
+
+mate-common (1.7.2-1) unstable; urgency=medium
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 18 Jan 2014 16:54:05 +0100
+
+mate-common (1.7.1-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 07 Oct 2013 18:20:40 +0200
+
+mate-common (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 17 Jul 2013 13:06:27 +0200
 
 mate-common (1.6.1-1) unstable; urgency=low
 

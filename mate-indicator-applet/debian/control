@@ -3,13 +3,11 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: debhelper (>= 8),
-               cdbs (>= 0.4.41),
+Build-Depends: debhelper (>= 9),
                libgtk2.0-dev (>= 2.12.0),
                libmatepanelapplet-dev,
                libdbus-glib-1-dev,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
+               yelp-tools,
                libtool,
                intltool,
                libxml2-dev,

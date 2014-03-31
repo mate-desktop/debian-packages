@@ -1,17 +1,20 @@
 #!/usr/bin/make -f
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/autotools.mk
-include /usr/share/cdbs/1/rules/utils.mk
+%:
+	dh $@
 
-DEB_DH_INSTALL_ARGS += --list-missing
+override_dh_install:
+	dh_install --list-missing
 
-DEB_CONFIGURE_SCRIPT := ./autogen.sh
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--localstatedir=/var \
+		--disable-static \
+		--disable-introspection \
+		--with-gtk=2.0
 
-DEB_CONFIGURE_EXTRA_FLAGS := --localstatedir=/var \
-							--libexecdir=/usr/lib/polkit-mate \
-							--disable-static \
-							--disable-introspection
+override_dh_strip:
+	dh_strip --dbg-package=libpolkit-gtk-mate-1-0-dbg
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

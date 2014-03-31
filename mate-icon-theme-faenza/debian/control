@@ -3,16 +3,15 @@ Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: debhelper (>= 8),
-               cdbs
+Build-Depends: debhelper (>= 9)
 Build-Depends-Indep: gettext,
                      hicolor-icon-theme,
                      intltool (>= 0.40.0),
                      pkg-config,
                      icon-naming-utils (>= 0.8.7),
                      librsvg2-bin,
-                     mate-common
-Standards-Version: 3.9.3
+                     mate-common,
+Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-icon-theme-faenza

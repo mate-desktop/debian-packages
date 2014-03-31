@@ -1,14 +1,13 @@
-etc
-usr/share/mate
-usr/share/locale
-usr/share/man/man1
-usr/share/applications
-usr/share/omf
-usr/share/icons
-usr/share/mate-bluetooth
+etc/
+usr/share/help/
+usr/share/locale/
+usr/share/man/man1/
+usr/share/applications/
+usr/share/icons/
+usr/share/mate-bluetooth/
 usr/share/MateConf/
 usr/share/glib-2.0/
-usr/bin
-usr/lib/mate-bluetooth/plugins/*.so
-usr/lib/caja-sendto/plugins/*.so
+usr/bin/
+usr/lib/*/mate-bluetooth/plugins/*.so
+usr/lib/*/caja-sendto/plugins/*.so
 debian/61-mate-bluetooth-rfkill.rules lib/udev/rules.d/

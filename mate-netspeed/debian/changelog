@@ -1,3 +1,21 @@
+mate-netspeed (1.8.0-0) unstable; urgency=low
+
+  * New upstream release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 06 Mar 2014 23:25:24 +0100
+
+mate-netspeed (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 19 Feb 2014 19:01:44 +0100
+
+mate-netspeed (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 24 Jan 2014 21:29:07 +0100
+
 mate-netspeed (1.6.0-1) unstable; urgency=low
 
   * New upstream release.

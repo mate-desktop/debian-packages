@@ -56,7 +56,6 @@ libmatekbdui.so.4 libmatekbd4 #MINVER#
  matekbd_indicator_config_init@Base 1.6.1
  MATEKBD_INDICATOR_CONFIG_KEY_BACKGROUND_COLOR@Base 1.6.1
  MATEKBD_INDICATOR_CONFIG_KEY_FONT_FAMILY@Base 1.6.1
- MATEKBD_INDICATOR_CONFIG_KEY_FONT_SIZE@Base 1.6.1
  MATEKBD_INDICATOR_CONFIG_KEY_FOREGROUND_COLOR@Base 1.6.1
  MATEKBD_INDICATOR_CONFIG_KEY_SECONDARIES@Base 1.6.1
  MATEKBD_INDICATOR_CONFIG_KEY_SHOW_FLAGS@Base 1.6.1
@@ -83,7 +82,6 @@ libmatekbdui.so.4 libmatekbd4 #MINVER#
  matekbd_keyboard_drawing_get_compat@Base 1.6.1
  matekbd_keyboard_drawing_get_geometry@Base 1.6.1
  matekbd_keyboard_drawing_get_keycodes@Base 1.6.1
- matekbd_keyboard_drawing_get_pixbuf@Base 1.6.1
  matekbd_keyboard_drawing_get_symbols@Base 1.6.1
  matekbd_keyboard_drawing_get_type@Base 1.6.1
  matekbd_keyboard_drawing_get_types@Base 1.6.1

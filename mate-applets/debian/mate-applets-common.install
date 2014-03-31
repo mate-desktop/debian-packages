@@ -1,7 +1,5 @@
 usr/share/glib-2.0/
 usr/share/icons/
 usr/share/locale/
-usr/share/mate/help/
-usr/share/MateConf/
-usr/share/omf/
+usr/share/help/
 usr/share/pixmaps/

@@ -1,6 +1,0 @@
-usr/share/xml/mallard/
-usr/share/pkgconfig/xml2po.pc
-usr/share/man/
-usr/lib/python*/dist-packages/xml2po/*.py
-usr/lib/python*/dist-packages/xml2po/modes/*.py
-usr/bin/xml2po

@@ -1,0 +1,10 @@
+usr/bin/
+usr/lib/*/atrild
+usr/lib/*/atril-convert-metadata
+usr/lib/*/atril/3/backends/*.so
+usr/lib/*/atril/3/backends/*.atril-backend
+usr/lib/*/caja/*/*.so
+usr/share/applications/atril.desktop
+usr/share/dbus-1/
+usr/share/glib-2.0/
+usr/share/man/

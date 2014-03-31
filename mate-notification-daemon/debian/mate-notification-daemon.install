@@ -1,4 +1,5 @@
 usr/share/applications/mate-notification-properties.desktop
+usr/share/man/
 usr/share/mate-notification-daemon/mate-notification-properties.ui
 usr/share/MateConf/gsettings/mate-notification-daemon.convert
 usr/share/icons/hicolor/
@@ -7,4 +8,4 @@ usr/share/dbus-1/
 usr/share/locale/
 usr/bin/mate-notification-properties
 usr/lib/mate-notification-daemon/mate-notification-daemon
-usr/lib/mate-notification-daemon/engines/*.so
+usr/lib/*/mate-notification-daemon/engines/*.so

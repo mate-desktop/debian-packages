@@ -3,13 +3,10 @@ Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper (>= 9),
-               dh-autoreconf,
                intltool,
                libglib2.0-dev,
                libgtk2.0-dev,
                libstartup-notification0-dev,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
                libx11-dev,
                libxrandr-dev,
                libxml2-dev,
@@ -19,7 +16,9 @@ Build-Depends: debhelper (>= 9),
                python-support,
                libglib2.0-doc,
                libgtk2.0-doc,
-               mate-common
+               libdconf-dev,
+               mate-common,
+               yelp-tools
 Standards-Version: 3.9.4
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://github.com/mate-desktop/debian-packages
@@ -29,11 +28,11 @@ Package: mate-desktop
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-         libunique-1.0-0,
          hicolor-icon-theme,
          libmate-desktop-2-17,
          mate-desktop-common (= ${source:Version})
 Conflicts: mate-desktop-gnome
+Suggests: mate-user-guide
 Description: Library with common API for various MATE modules
  This package contains the library with common API for various MATE modules.
 
@@ -64,7 +63,8 @@ Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          libmate-desktop-2-17 (= ${binary:Version}),
-         libstartup-notification0-dev
+         libstartup-notification0-dev,
+         libdconf-dev,
 Conflicts: libmatedesktop-dev
 Description: Library with common API for various MATE modules (development files)
  This package contain the library with common API for various MATE modules.
@@ -80,6 +80,15 @@ Description: Library with common API for various MATE modules (documentation fil
  This package contains the library with common API for various MATE modules.
  .
  This package contains the documentation files.
+
+Package: mate-user-guide
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: yelp
+Description: User documentation for MATE Desktop
+ This package contains the user guide for MATE Desktop and its main
+ applications.
 
 Package: mate-desktop-dbg
 Section: debug

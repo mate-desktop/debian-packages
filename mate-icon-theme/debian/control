@@ -11,14 +11,14 @@ Build-Depends-Indep: gettext,
                      icon-naming-utils (>= 0.8.7),
                      librsvg2-bin,
                      mate-common
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-icon-theme
 Architecture: all
 Depends: ${misc:Depends},
          hicolor-icon-theme,
-         libgtk2.0-bin,
+         libgtk-3-bin,
          librsvg2-common
 Description: MATE Desktop icon theme
  This package contains the default icon theme used by the MATE desktop.

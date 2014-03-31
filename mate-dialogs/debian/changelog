@@ -1,3 +1,33 @@
+mate-dialogs (1.8.0-0) unstable; urgency=low
+
+  * New upstream release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 05 Mar 2014 20:55:05 +0100
+
+mate-dialogs (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 18 Feb 2014 20:18:41 +0100
+
+mate-dialogs (1.7.3-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 13 Feb 2014 09:52:32 +0100
+
+mate-dialogs (1.7.2-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 14 Jan 2014 14:14:09 +0100
+
+mate-dialogs (1.7.1-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 08 Oct 2013 00:25:45 +0200
+
 mate-dialogs (1.6.0-1) unstable; urgency=low
 
   * New upstream release.

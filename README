@@ -1,10 +1,28 @@
 This is the repository of debian/ folders to build Debian and Ubuntu
-packages for MATE.
+unstable packages for MATE, for development and testing purposes.
 
-Useful links:
-  * Wiki (http://wiki.mate-desktop.org/)
-  * Mailing list (http://ml.mate-desktop.org/listinfo/mate-dev)
-  * Building order (http://wiki.mate-desktop.org/building)
+You can use debian/ folders with standard tarballs from
+http://pub.mate-desktop.org/releases/1.7/, 
 
-IRC
-  * #mate channel on irc.freenode.net
+Or you can build from git master branches. In this case you need to have
+these folders:
+
+    ~/mate/debian-packages      (this repo)
+
+    ~/mate/atril
+    ~/mate/caja                 (mate packages)
+    ~/mate/mate-panel
+
+Launch build.py from ~/mate. Example:
+
+    user@test ~/mate/ $ debian-packages/build.py caja
+
+The source folder will be copied on /tmp/, debian folder will be hacked
+to build without tarball, and result .debs will be put on ~/mate.
+
+
+
+If you want to build packages with GTK3, use setgtk.py to edit debian/
+folders forcing them to using all GTK3 dependencies:
+
+    ./setgtk.py --all --gtk3

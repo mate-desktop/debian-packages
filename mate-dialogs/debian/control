@@ -3,41 +3,53 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: debhelper (>= 8),
-               cdbs,
+Build-Depends: debhelper (>= 9),
                intltool,
                libgtk2.0-dev,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
                libnotify-dev,
                libglib2.0-dev,
+               libx11-dev,
                docbook-xml,
                xsltproc,
                mate-common,
-               gtk-doc-tools
+               gtk-doc-tools,
+               yelp-tools
 Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-dialogs
 Architecture: any
 Depends: ${misc:Depends},
-         ${shlibs:Depends}
+         ${shlibs:Depends},
+         mate-dialogs-common,
+Replaces: mate-dialogs-gnome
+Conflicts: mate-dialogs-gnome
+Provides: mate-dialogs-gnome
 Description: Display graphical dialog boxes from shell scripts
  mate-dialogs allows you to display GTK+ dialogs from shell scripts for
  MATE desktop (like zenity of GNOME).
+ .
+ This package contains the mate-dialogs executable.
 
-Package: mate-dialogs-gnome
-Architecture: any
-Depends: ${misc:Depends},
-         ${shlibs:Depends},
-         mate-dialogs
-Conflicts: zenity
-Provides: zenity
-Replaces: zenity
-Description: Display graphical dialog boxes from shell scripts (GNOME files)
- mate-dialogs allows you to display GTK+ dialogs from shell scripts for
+Package: mate-dialogs-common
+Architecture: all
+Depends: ${misc:Depends}
+Breaks: mate-dialogs (<< 1.6.1)
+Replaces: mate-dialogs (<< 1.6.1)
+Description: Display graphical dialog boxes from shell scripts (common files)
+ The mate-dialogs tool allows you to display GTK+ dialogs from shell scripts for
  MATE desktop (like zenity of GNOME).
  .
- This package contains the files that conflicts with GNOME zenity.
- If installed, this package can replace zenity (it contains /usr/bin/zenity and
- /usr/bin/gdialog).
+ This package contains the architecture independent files.
+
+Package: mate-dialogs-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-dialogs (= ${binary:Version})
+Description: Display graphical dialog boxes from shell scripts (debugging symbols)
+ This package contains debugging symbols for mate-dialogs. It is
+ provided to help debugging problems.
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.

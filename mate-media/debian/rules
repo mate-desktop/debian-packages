@@ -20,7 +20,8 @@ DEB_CONFIGURE_EXTRA_FLAGS += --libexecdir=/usr/lib/mate-media \
 		--disable-pulseaudio \
 		--disable-scrollkeeper \
 		--enable-gstmix \
-		--enable-gst-mixer-applet
+		--enable-gst-mixer-applet \
+		--with-gtk=2.0
 
 #DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
@@ -37,6 +38,7 @@ $(DEB_BUILDDIR_mate-media-pulse)/config.status:
 			--disable-scrollkeeper \
 			--disable-gstmix \
 			--disable-gst-mixer-applet \
+			--with-gtk=2.0 \
 			$(DEB_CONFIGURE_USER_FLAGS)
 
 build/mate-media-pulse::
@@ -44,7 +46,7 @@ build/mate-media-pulse::
 
 install/mate-media-pulse::
 	make -C $(DEB_BUILDDIR_mate-media-pulse) install DESTDIR=$(DEB_DESTDIR_mate-media-pulse)
-	rm -rf debian/mate-media-pulse/usr/lib/*.la
+	rm -rf debian/mate-media-pulse/usr/lib/*/*.la
 	# delete conflicts file with mate-media-common
 	rm -rf debian/mate-media-pulse/usr/share/locale/
 

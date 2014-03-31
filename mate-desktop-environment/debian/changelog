@@ -1,0 +1,86 @@
+mate-desktop-environment (1.8.0) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 17 Mar 2014 13:56:12 +0100
+
+mate-desktop-environment (1.7.0.1) unstable; urgency=low
+
+  * New upstream development release.
+  * Added metapackage with GSettings overrides for new MATE features.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 08 Feb 2014 22:20:25 +0100
+
+mate-desktop-environment (1.6.0.2) unstable; urgency=low
+
+  * Remove libraries from dependencies.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 03 Jul 2013 16:22:35 +0200
+
+mate-desktop-environment (1.6.0.1) unstable; urgency=low
+
+  * Add gvfs-bin as dependency of mate-core (for gvfs-open).
+  * Add ffmpegthumbnailer as dependency of mate-desktop-environment.
+  * Add dconf-tools as dependency of mate-desktop-environment-extra.
+  * Fix empty monospace font in Ubuntu GSettings overrides.
+  * Add mate-ffmpegthumbnailer.thumbnailer file to have video
+    thumbnails.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 04 Apr 2013 09:49:53 +0200
+
+mate-desktop-environment (1.6.0) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 03 Apr 2013 00:34:14 +0200
+
+mate-desktop-environment (1.5.0) unstable; urgency=low
+
+  * Update for latest MATE development release.
+  * Add branding for distributions.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 17 Feb 2013 17:33:35 +0100
+
+mate-desktop-environment (1.4.0) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Wed, 18 Jul 2012 15:39:20 -0400
+
+mate-desktop-environment (1.3.0) unstable; urgency=low
+
+  * mate-core: reverted dep to mate-keyring only.
+  * mate-desktop-environment: add dep on mate-bluetooth.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 22 May 2012 17:09:58 +0200
+
+mate-desktop-environment (1.2.2) unstable; urgency=low
+
+  * Rebuild for precise. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 01 Apr 2012 22:38:12 -0400
+
+mate-desktop-environment (1.2.1) unstable; urgency=low
+
+  * Install gnome-keyring by default instead of mate-keyring.
+  * Add mozo to mate-desktop-environment package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 22 Mar 2012 15:05:54 +0100
+
+mate-desktop-environment (1.2.0) unstable; urgency=low
+
+  * New release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 10 Mar 2012 18:30:33 +0100
+
+mate-desktop-environment (1.1.0) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 14 Dec 2011 01:33:23 +0100
+
+mate-desktop-environment (1.0.0) unstable; urgency=low
+
+  * Initial release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 22 Nov 2011 20:09:20 +0100

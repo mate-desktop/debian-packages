@@ -3,22 +3,19 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Standards-Version: 3.9.3
-Build-Depends: cdbs,
-               debhelper (>= 8),
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 9),
                intltool,
                libx11-dev,
                libgtk2.0-dev,
                libglib2.0-dev,
                libvte-dev,
-               scrollkeeper,
                libsm-dev,
                docbook-to-man,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
                libdbus-glib-1-dev,
                libdconf-dev,
-               mate-common
+               mate-common,
+               yelp-tools
 Homepage: http://www.mate-desktop.org
 
 Package: mate-terminal

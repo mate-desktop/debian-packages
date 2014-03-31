@@ -1,16 +1,17 @@
 Source: mate-control-center
 Section: mate
 Priority: optional
-Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: cdbs,
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Build-Depends: debhelper (>= 9),
                dh-autoreconf,
-               debhelper,
                mate-common,
                docbook-to-man,
                autotools-dev,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
+               yelp-tools,
                intltool,
                libxt-dev,
                libx11-dev,
@@ -24,7 +25,6 @@ Build-Depends: cdbs,
                libdbus-glib-1-dev,
                libxml2-dev,
                libmarco-dev,
-               mate-settings-daemon,
                libxft-dev,
                libxrender-dev,
                libxrandr-dev,
@@ -35,15 +35,17 @@ Build-Depends: cdbs,
                libunique-dev,
                desktop-file-utils,
                shared-mime-info,
-               scrollkeeper,
                libgtop2-dev,
                xsltproc,
                libstartup-notification0-dev,
                libpango1.0-dev,
                librsvg2-dev,
-               libdconf-dev
-Standards-Version: 3.9.3
+               libdconf-dev,
+               mate-settings-daemon
+Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/mate-control-center.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-mate/mate-control-center.git
 
 Package: mate-control-center
 Architecture: any

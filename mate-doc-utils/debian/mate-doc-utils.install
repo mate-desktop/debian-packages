@@ -1,7 +1,0 @@
-usr/bin/mate*
-usr/share/aclocal
-usr/share/locale
-usr/share/mate*
-usr/share/omf
-usr/share/pkgconfig/mate-doc-utils.pc
-usr/share/xml/mate

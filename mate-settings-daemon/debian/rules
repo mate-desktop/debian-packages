@@ -13,12 +13,14 @@ DEB_DH_MAKESHLIBS_ARGS_mate-settings-daemon-pulse += --no-act
 
 DEB_DH_INSTALL_ARGS += --list-missing
 
+#DEB_CONFIGURE_SCRIPT := ./autogen.sh
 DEB_CONFIGURE_EXTRA_FLAGS += \
 	--libexecdir=/usr/bin \
 	--disable-static \
 	--disable-pulse \
 	--enable-gstreamer \
-	--enable-polkit
+	--enable-polkit \
+	--with-gtk=2.0
 
 configure/mate-settings-daemon-pulse:: $(DEB_BUILDDIR_mate-settings-daemon-pulse)/config.status
 $(DEB_BUILDDIR_mate-settings-daemon-pulse)/config.status:
@@ -32,6 +34,7 @@ $(DEB_BUILDDIR_mate-settings-daemon-pulse)/config.status:
 			--enable-pulse \
 			--disable-gstreamer \
 			--enable-polkit \
+			--with-gtk=2.0 \
 			$(DEB_CONFIGURE_USER_FLAGS)
 
 build/mate-settings-daemon-pulse::

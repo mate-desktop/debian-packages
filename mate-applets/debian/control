@@ -3,36 +3,32 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Standards-Version: 3.9.3
-Build-Depends: cdbs,
-               debhelper (>= 8),
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9),
                libgtk2.0-dev,
                libglib2.0-dev,
-               libmate-panel-applet-dev,
                libgtop2-dev,
                libxklavier-dev,
-               libmatewnck-dev,
+               libwnck-dev,
                libmate-desktop-dev,
+               libmate-panel-applet-dev,
+               libmateweather-dev,
                libnotify-dev,
                libdbus-1-dev,
                libdbus-glib-1-dev,
                python-gtk2-dev,
                python-gobject-dev,
-               mate-icon-theme,
                libxml2-dev,
-               libmateweather-dev,
                libpolkit-gobject-1-dev,
                intltool,
                python-dev,
                libxt-dev,
                libx11-dev,
-               mate-settings-daemon,
                xsltproc,
                docbook-xsl,
                docbook-to-man,
                docbook-utils,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
+               yelp-tools,
                network-manager-dev,
                libgstreamer0.10-dev,
                libgstreamer-plugins-base0.10-dev,
@@ -46,7 +42,9 @@ Build-Depends: cdbs,
                libavahi-common-dev,
                libavahi-glib-dev,
                mate-common,
-               libsoup2.4-dev
+               mate-icon-theme,
+               libsoup2.4-dev,
+               libgtksourceview2.0-dev
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-applets

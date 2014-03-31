@@ -1,3 +1,27 @@
+python-caja (1.8.0-0) unstable; urgency=low
+
+  * New upstream release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 06 Mar 2014 23:26:29 +0100
+
+python-caja (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 19 Feb 2014 21:33:01 +0100
+
+python-caja (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 17 Jan 2014 15:43:22 +0100
+
+python-caja (1.6.1-0~mate1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 13 Jan 2014 15:37:04 +0100
+
 python-caja (1.6.0-1) unstable; urgency=low
 
   * New upstream release.

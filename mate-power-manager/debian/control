@@ -3,10 +3,9 @@ Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: debhelper (>= 8),
+Build-Depends: debhelper (>= 9),
                autotools-dev,
                libtool,
-               mate-panel,
                libdbus-glib-1-dev,
                libxml-parser-perl,
                libxext-dev,
@@ -17,23 +16,21 @@ Build-Depends: debhelper (>= 8),
                docbook-to-man,
                intltool,
                libnotify-dev,
-               docbook-utils,
                libxrandr-dev,
                xmlto,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
-               scrollkeeper,
+               yelp-tools,
                libupower-glib-dev,
                libcanberra-gtk-dev,
                libunique-dev,
-               libmate-keyring-dev,
+               libgnome-keyring-dev,
                pkg-config,
                libmate-panel-applet-dev,
-               libgcrypt11-dev,
                libavahi-client-dev,
                libavahi-common-dev,
                libavahi-glib-dev,
-               mate-common
+               mate-common,
+               docbook-utils,
+               libgcrypt11-dev
 Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
 

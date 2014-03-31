@@ -1,3 +1,39 @@
+mate-desktop (1.8.0-0) unstable; urgency=low
+
+  * New upstream release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 05 Mar 2014 20:37:19 +0100
+
+mate-desktop (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 14 Feb 2014 19:19:03 +0100
+
+mate-desktop (1.7.5-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 13 Feb 2014 09:40:06 +0100
+
+mate-desktop (1.7.3-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 16 Jan 2014 12:33:06 +0100
+
+mate-desktop (1.7.1-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 07 Oct 2013 18:23:24 +0200
+
+mate-desktop (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 17 Jul 2013 13:05:49 +0200
+
 mate-desktop (1.6.1-1) unstable; urgency=low
 
   * Initial release.

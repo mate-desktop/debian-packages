@@ -1,3 +1,15 @@
+mate-sensors-applet (1.8.0-0) unstable; urgency=low
+
+  * New upstream release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 06 Mar 2014 23:25:39 +0100
+
+mate-sensors-applet (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 25 Jan 2014 13:22:39 +0100
+
 mate-sensors-applet (1.6.0-1) unstable; urgency=low
 
   * New upstream release.

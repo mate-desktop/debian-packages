@@ -3,11 +3,10 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: cdbs,
-               debhelper (>= 8),
+Build-Depends: debhelper (>= 9),
                quilt,
                intltool (>= 0.35.0),
-               mate-doc-utils,
+               yelp-tools,
                libxt-dev,
                pkg-config,
                libdbus-1-dev (>= 1.1.1),
@@ -17,11 +16,10 @@ Build-Depends: cdbs,
                libnotify-dev,
                libcanberra-gtk-dev,
                libselinux1-dev [linux-any],
-               libmatebluetooth-dev (>= 1.5.0) [linux-any],
                libunique-dev,
                libcaja-extension-dev (>= 1.5.0),
                mate-common
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 
 Package: mate-user-share
 Architecture: any
@@ -29,8 +27,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          apache2.2-bin,
          libapache2-mod-dnssd (>= 0.6),
-         obex-data-server [linux-any],
-         mate-bluetooth [linux-any]
+         obex-data-server [linux-any]
 Description: User level public file sharing via WebDAV or ObexFTP
  mate-user-share is a small package that allows easy user-level file sharing
  via WebDAV or ObexFTP. The shared files are announced on the network
