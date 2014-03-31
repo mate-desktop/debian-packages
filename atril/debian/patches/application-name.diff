@@ -1,0 +1,9 @@
++--- a/data/atril.desktop.in.in
+++++ b/data/atril.desktop.in.in
++@@ -1,5 +1,5 @@
++ [Desktop Entry]
++-_Name=Atril Document Viewer
+++_Name=Document Viewer
++ _GenericName=Document Viewer
++ _Comment=View multi-page documents
++ TryExec=atril
