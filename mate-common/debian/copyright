@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: mate-common
-Source: http://pub.mate-desktop.org/releases/
+Source: http://git.mate-desktop.org/mate-common/
 
 Files: *
 Copyright: 1997-2001 Elliot Lee <sopwith@redhat.com>

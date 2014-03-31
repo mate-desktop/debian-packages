@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+# Including this gives us a number of rules typical to a GNOME
+# program, including setting GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1.
+# Note that this class inherits from autotools.mk and docbookxml.mk,
+# so you don't need to include those too.
+include /usr/share/cdbs/1/class/gnome.mk
+include /usr/share/cdbs/1/rules/autoreconf.mk
+
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+DEB_CONFIGURE_EXTRA_FLAGS := --disable-runtime-deps-check
+
+common-install-arch::
+	rm -f $(CURDIR)/debian/blueman/usr/lib/nautilus-sendto/plugins/libnstblueman.la
+
+binary-install/blueman::
+	dh_python2 --no-guessing-versions
+
+install/blueman::
+	rm -f $(CURDIR)/debian/blueman/usr/lib/python*/*-packages/_blueman.la
+	rm -f $(CURDIR)/debian/blueman/usr/lib/python*/*-packages/_blueman.a
+

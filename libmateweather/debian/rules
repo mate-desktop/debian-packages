@@ -10,7 +10,8 @@ override_dh_auto_configure:
 	dh_auto_configure -- \
 		--disable-static \
 		--enable-locations-compression \
-		--enable-python=no
+		--enable-python=no \
+		--with-gtk=2.0
 
 override_dh_strip:
 	dh_strip --dbg-package=libmateweather-dbg

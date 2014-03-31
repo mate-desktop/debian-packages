@@ -1,76 +1,29 @@
-mate-screensaver (1.6.1-1) petra; urgency=low
+mate-screensaver (1.8.0-0) unstable; urgency=low
 
-  * New upstream version
+  * New upstream release
 
- -- Clement Lefebvre <root@linuxmint.com>  Tue, 01 Oct 2013 14:53:41 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 05 Mar 2014 21:58:47 +0100
 
-mate-screensaver (1.6.0-1) unstable; urgency=low
+mate-screensaver (1.7.90-2) unstable; urgency=medium
 
-  * New upstream release. 
+  * Add systemd support.
 
- -- Steve Zesch <stevezesch2@gmail.com>  Sun, 31 Mar 2013 18:25:55 -0400
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 27 Feb 2014 21:49:19 +0100
 
-mate-screensaver (1.5.2-1) unstable; urgency=low
+mate-screensaver (1.7.90-1) unstable; urgency=low
 
-  * New upstream development release.
-  * Enable libnotify-dev in build deps.
-  * Build mate-screensaver-common and mate-screensaver-dbg packages.
+  * New upstream development release
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 14 Mar 2013 16:06:53 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 18 Feb 2014 21:00:31 +0100
 
-mate-screensaver (1.5.1-1) unstable; urgency=low
+mate-screensaver (1.7.1-1) unstable; urgency=low
 
-  * New upstream development release.
+  * New upstream development release
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 04 Dec 2012 10:49:30 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 13 Feb 2014 21:27:22 +0100
 
-mate-screensaver (1.5.0-1) unstable; urgency=low
-
-  * New upstream development release.
-  * Remove mateconf from depends.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 03 Nov 2012 12:08:55 +0100
-
-mate-screensaver (1.4.0-1) unstable; urgency=low
+mate-screensaver (1.7.0-1) unstable; urgency=low
 
   * New upstream release.
 
- -- Steve Zesch <stevezesch2@gmail.com>  Sun, 15 Jul 2012 13:29:04 -0400
-
-mate-screensaver (1.2.0-3) unstable; urgency=low
-
-  * Add patches to support user switch with GDM.
-  * Add libmatenofiy-dev to build depends.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 26 May 2012 12:30:11 +0200
-
-mate-screensaver (1.2.0-2) unstable; urgency=low
-
-  * Rebuild for precise. 
-
- -- Steve Zesch <stevezesch2@gmail.com>  Fri, 30 Mar 2012 21:07:30 -0400
-
-mate-screensaver (1.2.0-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 07 Mar 2012 22:27:08 +0100
-
-mate-screensaver (1.1.0-2) unstable; urgency=low
-
-  * Fixed PAM.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 15 Dec 2011 01:57:37 +0100
-
-mate-screensaver (1.1.0-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 13 Dec 2011 23:26:57 +0100
-
-mate-screensaver (1.0.0-1) unstable; urgency=low
-
-  * Initial release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 06 Nov 2011 20:15:08 +0100
-
+ -- stefano <stefano@debian>  Sun, 03 Nov 2013 21:08:31 +0100

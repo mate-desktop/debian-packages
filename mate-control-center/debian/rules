@@ -1,29 +1,24 @@
 #!/usr/bin/make -f
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/rules/utils.mk
-include /usr/share/cdbs/1/class/autotools.mk
+%:
+	dh $@
 
-DEB_DH_INSTALL_ARGS += --list-missing
+override_dh_install:
+	rm -rfv debian/tmp/usr/share/applications/mimeinfo.cache
+	rm -rfv debian/tmp/usr/lib/*/*.la
+	rm -rfv debian/tmp/usr/lib/*/*/*.la
+	dh_install --list-missing
 
-DEB_CONFIGURE_EXTRA_FLAGS += \
-						--disable-scrollkeeper \
-						--localstatedir=/var \
-						--disable-static \
-						--disable-update-mimedb
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--disable-scrollkeeper \
+		--localstatedir=/var \
+		--disable-static \
+		--disable-update-mimedb \
+		--with-gtk=2.0
 
-# enable ubuntu hack only in oneiric (not needed in precise)
-ifeq ($(shell dpkg-vendor --is Ubuntu && echo yes),yes)
-    ifeq ($(shell lsb_release -cs),oneiric)
-        DEB_CONFIGURE_EXTRA_FLAGS += --enable-ubuntu
-    endif
-endif
-
-binary-post-install/mate-control-center::
-	rm -f debian/*/usr/share/applications/mimeinfo.cache
-	rm -f debian/*/usr/lib/*.la
-	rm -f debian/*/usr/lib/*/*.la
-	
+override_dh_strip:
+	dh_strip --dbg-package=mate-control-center-dbg
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

@@ -1,0 +1,30 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_install:
+	rm -fv debian/tmp/usr/lib/*/*.la 
+	rm -rfv debian/tmp/usr/share/omf/
+	rm -rfv debian/tmp/usr/share/help/
+	dh_install --list-missing
+
+override_dh_auto_test:
+	DEB_BUILD_OPTIONS=nocheck dh_auto_test
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--libexecdir=/usr/lib/caja \
+		--disable-update-mimedb \
+		--disable-static \
+		--localstatedir=/var \
+		--enable-unique \
+		--enable-introspection \
+		--enable-gtk-doc \
+		--with-gtk=2.0
+
+override_dh_strip:
+	dh_strip --dbg-package=caja-dbg
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..

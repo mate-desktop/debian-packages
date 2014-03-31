@@ -1,0 +1,41 @@
+#!/usr/bin/make -f
+
+DEB_ATRIL_FLAGS=
+ifeq ($(shell dpkg-vendor --is Debian && echo yes),yes)
+ifeq ($(shell lsb_release -cs),wheezy)
+	DEB_ATRIL_FLAGS=--without-keyring
+endif
+endif
+
+%:
+	dh $@
+
+override_dh_install:
+	rm -rfv debian/tmp/usr/lib/*/*.la
+	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
+	rm -rfv debian/tmp/usr/lib/*/atril/3/backends/*.la
+	rm -rfv debian/tmp/usr/share/MateConf/gsettings/atril.convert
+	dh_install --list-missing
+
+override_dh_auto_test:
+	DEB_BUILD_OPTIONS=nocheck dh_auto_test
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--disable-scrollkeeper \
+		--enable-gtk-doc \
+		--enable-djvu \
+		--enable-dvi \
+		--enable-t1lib \
+		--enable-pixbuf \
+		--enable-comics \
+		--disable-introspection \
+		--disable-static \
+		--with-gtk=2.0 \
+		$(DEB_ATRIL_FLAGS)
+
+override_dh_strip:
+	dh_strip --dbg-package=atril-dbg
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..

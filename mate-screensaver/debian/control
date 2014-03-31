@@ -3,15 +3,12 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: cdbs,
-               debhelper (>= 8),
-               quilt,
+Build-Depends: debhelper (>= 9),
                intltool,
                libdbus-glib-1-dev,
                libglib2.0-dev,
-               libx11-dev,
                libgtk2.0-dev,
-               libmatemenu-dev,
+               libmate-menu-dev,
                libmate-desktop-dev,
                libstartup-notification0-dev,
                libmatekbd-dev,
@@ -27,8 +24,9 @@ Build-Depends: cdbs,
                libxxf86vm-dev,
                libgl1-mesa-dev | libgl1-mesa-swx11-dev,
                libnotify-dev,
-               mate-common
-Standards-Version: 3.9.3
+               libsystemd-login-dev,
+               mate-common,
+Standards-Version: 3.9.4
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-screensaver
@@ -37,7 +35,6 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-screensaver-common (= ${source:Version}),
          dbus-x11,
-         mate-icon-theme,
          mate-session-manager
 Recommends: mate-power-manager
 Suggests: xscreensaver-data, rss-glx

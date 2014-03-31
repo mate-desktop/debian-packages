@@ -1,8 +1,20 @@
-mate-power-manager (1.6.2-1) petra; urgency=low
+mate-power-manager (1.8.0-0) unstable; urgency=low
 
-  * New upstream version
+  * New upstream release
 
- -- Clement Lefebvre <root@linuxmint.com>  Tue, 01 Oct 2013 14:52:18 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 06 Mar 2014 23:13:36 +0100
+
+mate-power-manager (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 19 Feb 2014 20:37:09 +0100
+
+mate-power-manager (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 17 Jan 2014 12:34:48 +0100
 
 mate-power-manager (1.6.1-1) unstable; urgency=low
 

@@ -1,3 +1,15 @@
+mate-user-share (1.8.0-0) unstable; urgency=low
+
+  * New upstream release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 06 Mar 2014 23:26:03 +0100
+
+mate-user-share (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 20 Feb 2014 20:35:06 +0100
+
 mate-user-share (1.6.0-2) unstable; urgency=low
 
   * debian/rules: Dont remove xdg folder.

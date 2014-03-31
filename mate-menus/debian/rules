@@ -1,11 +1,18 @@
 #!/usr/bin/make -f
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/autotools.mk
+%:
+	dh $@
 
-DEB_DH_INSTALL_ARGS += --list-missing
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--disable-scrollkeeper \
+		--disable-maintainer-mode
 
-DEB_CONFIGURE_SCRIPT := ./autogen.sh
+override_dh_install:
+	dh_install --list-missing
+
+override_dh_strip:
+	dh_strip --dbg-package=mate-menus-dbg
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

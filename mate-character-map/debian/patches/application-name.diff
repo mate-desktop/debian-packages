@@ -1,9 +1,0 @@
---- a/mucharmap.desktop.in.in
-+++ b/mucharmap.desktop.in.in
-@@ -1,5 +1,5 @@
- [Desktop Entry]
--_Name=MATE Character Map
-+_Name=Character Map
- _GenericName=Character Map
- _Comment=Insert special characters into documents
- Exec=mucharmap

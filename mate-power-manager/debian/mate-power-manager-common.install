@@ -4,5 +4,4 @@ usr/share/locale/
 usr/share/mate-2.0/
 usr/share/mate-panel/applets/
 usr/share/mate-power-manager/
-usr/share/mate/help/
-usr/share/omf/mate-power-manager/
+usr/share/help/

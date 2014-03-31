@@ -3,12 +3,11 @@ Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: debhelper (>= 8),
-               cdbs,
+Build-Depends: debhelper (>= 9),
                mate-common,
                libglib2.0-dev
 Build-Depends-Indep: intltool
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-backgrounds

@@ -3,14 +3,13 @@ Section: python
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: debhelper (>= 8),
-               cdbs,
+Build-Depends: debhelper (>= 9),
                mate-common,
                gtk-doc-tools,
                libcaja-extension-dev,
                python-dev,
-               python-gtk2-dev (>= 2.8.0),
-               python-gobject-2-dev (>= 2.28.2)
+               python-gobject-dev,
+               quilt
 Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
 

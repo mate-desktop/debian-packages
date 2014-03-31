@@ -1,14 +1,11 @@
 #!/usr/bin/make -f
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/autotools.mk
-include /usr/share/cdbs/1/rules/utils.mk
+%:
+	dh $@
 
-#DEB_DH_INSTALL_ARGS += --list-missing
-
-DEB_DH_ICONS_ARGS := --no-act
-
-DEB_CONFIGURE_SCRIPT := ./autogen.sh
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--disable-maintainer-mode
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

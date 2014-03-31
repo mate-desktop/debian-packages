@@ -1,19 +1,27 @@
 #!/usr/bin/make -f
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/autotools.mk
-
 LDFLAGS=$(shell echo $$LDFLAGS | sed -e 's/-Wl,-Bsymbolic-functions//')
 export LDFLAGS
 
-DEB_DH_INSTALL_ARGS += --list-missing
+%:
+	dh $@
 
-DEB_CONFIGURE_EXTRA_FLAGS := --disable-scrollkeeper \
-				--disable-desktop-update \
-				--disable-icon-update \
-				--disable-introspection
+override_dh_install:
+	rm -fv debian/tmp/usr/lib/*/*.la 
+	dh_install --list-missing
 
-DEB_CONFIGURE_SCRIPT := ./autogen.sh
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--disable-static \
+		--disable-scrollkeeper \
+		--disable-desktop-update \
+		--disable-icon-update \
+		--disable-introspection \
+		--enable-gtk-doc \
+		--with-gtk=2.0
+
+override_dh_strip:
+	dh_strip --dbg-package=mate-bluetooth-dbg
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

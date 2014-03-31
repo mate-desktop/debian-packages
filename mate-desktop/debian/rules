@@ -4,8 +4,11 @@
 	dh $@
 
 override_dh_install:
-	rm -f debian/tmp/usr/lib/*/*.la 
-	rm -rf debian/tmp/usr/share/omf/
+	rm -fv debian/tmp/usr/lib/*/*.la 
+	rm -rfv debian/tmp/usr/share/omf/
+	rm -rfv debian/tmp/usr/share/help/*/fdl/
+	rm -rfv debian/tmp/usr/share/help/*/gpl/
+	rm -rfv debian/tmp/usr/share/help/*/lgpl/
 	dh_install --list-missing
 
 override_dh_auto_configure:
@@ -13,7 +16,9 @@ override_dh_auto_configure:
 		--disable-static \
 		--disable-scrollkeeper \
 		--disable-schemas-compile \
-		--enable-gtk-doc
+		--enable-gtk-doc \
+		--enable-mpaste \
+		--with-gtk=2.0
 
 override_dh_strip:
 	dh_strip --dbg-package=mate-desktop-dbg

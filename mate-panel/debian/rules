@@ -14,7 +14,9 @@ override_dh_auto_configure:
 		--libexecdir=/usr/lib/mate-panel \
 		--disable-scrollkeeper \
 		--disable-static \
-		--enable-introspection
+		--enable-introspection \
+		--enable-gtk-doc \
+		--with-gtk=2.0
 
 override_dh_strip:
 	dh_strip --dbg-package=mate-panel-dbg

@@ -3,18 +3,15 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: cdbs,
-               debhelper (>= 8),
-               libmatepanelapplet-dev,
-               scrollkeeper,
+Build-Depends: debhelper (>= 9),
+               libmate-panel-applet-dev,
                libxml-parser-perl,
                libgtop2-dev,
                libgtk2.0-dev,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
+               yelp-tools,
                wireless-tools,
                mate-common
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-netspeed

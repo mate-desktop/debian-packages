@@ -1,5 +1,23 @@
-mate-panel (1.6.1-0) UNRELEASED; urgency=low
+mate-panel (1.8.0-0) unstable; urgency=low
 
-  * Initial release.
+  * New upstream release
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 13 Jul 2013 12:54:58 +0200 
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 05 Mar 2014 21:52:39 +0100
+
+mate-panel (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 18 Feb 2014 20:50:58 +0100
+
+mate-panel (1.7.2-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 13 Feb 2014 21:20:56 +0100
+
+mate-panel (1.7.1-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 14 Jan 2014 15:41:22 +0100

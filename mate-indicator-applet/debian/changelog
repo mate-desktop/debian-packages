@@ -1,3 +1,15 @@
+mate-indicator-applet (1.8.0-0) unstable; urgency=low
+
+  * New upstream release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 06 Mar 2014 23:25:14 +0100
+
+mate-indicator-applet (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 19 Feb 2014 20:47:04 +0100
+
 mate-indicator-applet (1.6.0-1) unstable; urgency=low
 
   * New upstream release.

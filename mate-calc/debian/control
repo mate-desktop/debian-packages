@@ -3,28 +3,49 @@ Section: math
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: cdbs,
-               debhelper (>= 8),
+Build-Depends: debhelper (>= 9),
                libatk1.0-dev,
                libglib2.0-dev,
                libgtk2.0-dev,
-               scrollkeeper,
                intltool,
                libxml2-dev,
                flex,
                bison,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
+               yelp-tools,
                mate-common
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-calc
 Architecture: any
 Depends: ${shlibs:Depends},
-         ${misc:Depends}
+         ${misc:Depends},
+         mate-calc-common (= ${source:Version}),
 Recommends: mate-icon-theme
 Description: MATE desktop calculator
  mate-calc is a powerful graphical calculator with financial, logical and
  scientific modes. It uses a multiple precision package to do its arithmetic
  to give a high degree of accuracy.
+
+Package: mate-calc-common
+Architecture: all
+Depends: ${misc:Depends}
+Replaces: mate-calc (<< 1.7.0)
+Description: MATE desktop calculator (common files)
+ mate-calc is a powerful graphical calculator with financial, logical and
+ scientific modes. It uses a multiple precision package to do its arithmetic
+ to give a high degree of accuracy.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-calc-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-calc (= ${binary:Version}),
+Description: MATE desktop calculator (debugging symbols)
+ This package contains debugging symbols for mate-calc. It is provided
+ to help debugging problems.
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.

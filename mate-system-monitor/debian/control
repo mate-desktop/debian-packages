@@ -1,16 +1,15 @@
 Source: mate-system-monitor
-Section: mate
+Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: cdbs,
-               debhelper (>= 8),
+Build-Depends: debhelper (>= 9),
                quilt,
                docbook-to-man,
                intltool,
                pkg-config,
                libglib2.0-dev,
-               libmatewnck-dev,
+               libwnck-dev,
                libgtop2-dev,
                libgtk2.0-dev,
                mate-icon-theme,
@@ -19,11 +18,9 @@ Build-Depends: cdbs,
                libxml2-dev,
                librsvg2-dev,
                libdbus-glib-1-dev,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
-               scrollkeeper,
+               yelp-tools,
                mate-common
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-system-monitor
@@ -36,3 +33,26 @@ Description: Process viewer and system resource monitor for MATE
  This package allows you to graphically view and manipulate the running
  processes on your system.  It also provides an overview of available
  resources such as CPU and memory.
+
+Package: mate-system-monitor-common
+Architecture: all
+Depends: ${misc:Depends}
+Replaces: mate-system-monitor (<< 1.7.0)
+Description: Process viewer and system resource monitor for MATE (common files)
+ This package allows you to graphically view and manipulate the running
+ processes on your system.  It also provides an overview of available
+ resources such as CPU and memory.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-system-monitor-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-system-monitor (= ${binary:Version})
+Description: Process viewer and system resource monitor for MATE (debugging symbols)
+ This package contains debugging symbols for mate-system-monitor. It is
+ provided to help debugging problems.
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.

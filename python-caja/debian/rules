@@ -1,19 +1,20 @@
 #!/usr/bin/make -f
-# -*- mode: makefile; coding: utf-8 -*-
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/rules/utils.mk
-include /usr/share/cdbs/1/class/autotools.mk
+%:
+	dh $@
 
-DEB_CONFIGURE_SCRIPT := ./autogen.sh
+override_dh_install:
+	rm -rfv debian/tmp/usr/lib/*/caja-python/caja.la
+	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/libcaja-python.la
+	dh_install --list-missing
 
-DEB_CONFIGURE_EXTRA_FLAGS += --disable-static --enable-gtk-doc
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--disable-static \
+		--enable-gtk-doc
 
-DEB_DH_INSTALL_ARGS += --list-missing
-
-binary-install/python-caja::
-	rm -rf debian/python-caja/usr/lib/caja-python/caja.la
-	rm -rf debian/python-caja/usr/lib/caja/extensions-2.0/libcaja-python.la
+override_dh_strip:
+	dh_strip --dbg-package=python-caja-dbg
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

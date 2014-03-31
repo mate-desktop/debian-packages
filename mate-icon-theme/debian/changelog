@@ -1,103 +1,29 @@
-mate-icon-theme (1.6.2-1) petra; urgency=low
+mate-icon-theme (1.8.0-0) unstable; urgency=low
 
-  * New upstream version
+  * New upstream release
 
- -- Clement Lefebvre <root@linuxmint.com>  Tue, 01 Oct 2013 14:51:55 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 05 Mar 2014 20:55:02 +0100
+
+mate-icon-theme (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 18 Feb 2014 20:16:29 +0100
+
+mate-icon-theme (1.7.1-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 13 Feb 2014 09:46:28 +0100
+
+mate-icon-theme (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 08 Oct 2013 13:03:25 +0200
 
 mate-icon-theme (1.6.1-1~mate1) unstable; urgency=low
 
   * New upstream release.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 02 Jul 2013 10:51:01 +0200
-
-mate-icon-theme (1.6.0-2) unstable; urgency=low
-
-  * Add patch to install text-x-preview information.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 08 Apr 2013 23:01:43 +0200
-
-mate-icon-theme (1.6.0-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 31 Mar 2013 14:37:12 +0200
-
-mate-icon-theme (1.5.1-1) unstable; urgency=low
-
-  * New upstream development release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 22 Mar 2013 20:50:41 +0100
-
-mate-icon-theme (1.5.0-1) unstable; urgency=low
-
-  * New upstream development release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 10 Oct 2012 15:49:38 +0200
-
-mate-icon-theme (1.4.0-2) unstable; urgency=low
-
-  * New upstream release.
-
- -- Steve Zesch <stevezesch2@gmail.com>  Fri, 13 Jul 2012 18:37:00 -0400
-
-mate-icon-theme (1.4.0-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Steve Zesch <stevezesch2@gmail.com>  Fri, 13 Jul 2012 14:19:50 -0400
-
-mate-icon-theme (1.2.0-2) unstable; urgency=low
-
-  * Rebuild for precise.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 28 Mar 2012 16:47:40 +0200
-
-mate-icon-theme (1.2.0-1) unstable; urgency=low
-
-  * New upstream release.
-  * Bump Standards-Version to 3.9.3 (no changes).
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 23 Feb 2012 02:09:36 +0100
-
-mate-icon-theme (1.1.1-1) unstable; urgency=low
-
-  * New upstream release.
-  * Bump Standards-Version to 3.9.2.
-  * debian/watch: source is now .xz.
-  * debian/rules: remove empty /usr/share/locale folder.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 26 Jan 2012 00:27:45 +0100
-
-mate-icon-theme (1.1.0-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 08 Dec 2011 21:53:38 +0100
-
-mate-icon-theme (2011.12.01-1) unstable; urgency=low
-
-  * New upstream release
-  * Created debian/watch
-  * Added DEB_CONFIGURE_SCRIPT and get-orig-source to debian/rules
-  * Added mate-common dependency to debian/control
-
- -- Steve Zesch <stevezesch2@gmail.com>  Mon, 05 Dec 2011 15:48:45 -0500
-
-mate-icon-theme (1.0.0-1) unstable; urgency=low
-
-  * New upstream release
-
- -- Clement Lefebvre <root@linuxmint.com>  Thu, 03 Nov 2011 17:56:56 +0000
-
-mate-icon-theme (2011.11.02) unstable; urgency=low
-
-  * 2011.11.02
-
- -- Clement Lefebvre <root@linuxmint.com>  Wed, 02 Nov 2011 17:52:16 +0000
-
-mate-icon-theme (2011.10.18-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 20 Oct 2011 20:14:01 +0200
-

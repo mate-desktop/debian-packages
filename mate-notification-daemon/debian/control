@@ -3,19 +3,18 @@ Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: cdbs,
-               debhelper (>= 8),
+Build-Depends: debhelper (>= 9),
                libglib2.0-dev,
                libx11-dev,
                libgtk2.0-dev,
                libdbus-1-dev,
                libdbus-glib-1-dev,
-               libmatewnck-dev,
+               libwnck-dev,
                libcanberra-gtk-dev,
                libnotify-dev,
                intltool,
                mate-common
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-notification-daemon

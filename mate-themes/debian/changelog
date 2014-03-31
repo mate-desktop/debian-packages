@@ -1,3 +1,21 @@
+mate-themes (1.8.0-0) unstable; urgency=low
+
+  * New upstream release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 05 Mar 2014 21:53:43 +0100
+
+mate-themes (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 18 Feb 2014 20:56:40 +0100
+
+mate-themes (1.7.2-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 17 Jan 2014 12:04:15 +0100
+
 mate-themes (1.6.1-1~mate1) unstable; urgency=low
 
   * New upstream release.
