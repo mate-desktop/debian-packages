@@ -5,7 +5,7 @@
 -_Name=Caja
 +_Name=File Manager
  _GenericName=File Manager
- Exec=caja -n
+ Exec=caja
  Icon=system-file-manager
 --- a/data/caja.desktop.in.in
 +++ b/data/caja.desktop.in.in
@@ -14,6 +14,6 @@
 -_Name=Caja
 +_Name=File Manager
  _GenericName=File Manager
- Exec=caja -n
+ Exec=caja
  Icon=system-file-manager
 
