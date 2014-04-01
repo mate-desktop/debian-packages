@@ -11,6 +11,7 @@ Build-Depends: debhelper (>= 9),
                libdbus-1-dev,
                libdbus-glib-1-dev,
                mate-common,
+               libmate-desktop-dev,
 Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 
