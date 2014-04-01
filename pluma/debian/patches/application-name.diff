@@ -1,9 +1,9 @@
-+--- a/data/pluma.desktop.in.in
-++++ b/data/pluma.desktop.in.in
-+@@ -1,5 +1,5 @@
-+ [Desktop Entry]
-+-_Name=Pluma
-++_Name=Text Editor
-+ _GenericName=Text Editor
-+ _Comment=Edit text files
-+ Exec=pluma %U
+--- a/data/pluma.desktop.in.in
++++ b/data/pluma.desktop.in.in
+@@ -1,5 +1,5 @@
+ [Desktop Entry]
+-_Name=Pluma
++_Name=Text Editor
+ _GenericName=Text Editor
+ _Comment=Edit text files
+ Exec=pluma %U

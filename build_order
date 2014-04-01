@@ -13,16 +13,14 @@
     mate-backgrounds
     mate-themes
     mate-notification-daemon
+    marco
     mate-control-center
     mate-screensaver    
     mate-media
     mate-power-manager
     mate-system-monitor
     mate-icon-theme-faenza
-    mate-applets    
-    mate-bluetooth
-    blueman
-    marco
+    mate-applets        
     atril
     eom
     pluma
@@ -30,6 +28,7 @@
     caja-extensions
     python-caja
     caja-dropbox
+    mate-bluetooth
     engrampa
     mozo
     mate-calc

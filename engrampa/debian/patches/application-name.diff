@@ -1,9 +1,9 @@
-+--- a/data/engrampa.desktop.in.in
-++++ b/data/engrampa.desktop.in.in
-+@@ -1,5 +1,5 @@
-+ [Desktop Entry]
-+-_Name=Engrampa Archive Manager
-++_Name=Archive Manager
-+ _GenericName=Archive Manager
-+ _Comment=Create and modify an archive
-+ TryExec=engrampa
+--- a/data/engrampa.desktop.in.in
++++ b/data/engrampa.desktop.in.in
+@@ -1,5 +1,5 @@
+ [Desktop Entry]
+-_Name=Engrampa Archive Manager
++_Name=Archive Manager
+ _GenericName=Archive Manager
+ _Comment=Create and modify an archive
+ TryExec=engrampa

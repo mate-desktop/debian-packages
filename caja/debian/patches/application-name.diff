@@ -1,19 +1,19 @@
-+--- a/data/caja.desktop.in
-++++ b/data/caja.desktop.in
-+@@ -1,5 +1,5 @@
-+ [Desktop Entry]
-+-_Name=Caja
-++_Name=File Manager
-+ _GenericName=File Manager
-+ Exec=caja -n
-+ Icon=system-file-manager
-+--- a/data/caja.desktop.in.in
-++++ b/data/caja.desktop.in.in
-+@@ -1,5 +1,5 @@
-+ [Desktop Entry]
-+-_Name=Caja
-++_Name=File Manager
-+ _GenericName=File Manager
-+ Exec=caja -n
-+ Icon=system-file-manager
+--- a/data/caja.desktop.in
++++ b/data/caja.desktop.in
+@@ -1,5 +1,5 @@
+ [Desktop Entry]
+-_Name=Caja
++_Name=File Manager
+ _GenericName=File Manager
+ Exec=caja -n
+ Icon=system-file-manager
+--- a/data/caja.desktop.in.in
++++ b/data/caja.desktop.in.in
+@@ -1,5 +1,5 @@
+ [Desktop Entry]
+-_Name=Caja
++_Name=File Manager
+ _GenericName=File Manager
+ Exec=caja -n
+ Icon=system-file-manager
 
