@@ -21,14 +21,13 @@
     mate-system-monitor
     mate-icon-theme-faenza
     mate-applets        
-    atril
     eom
     pluma
     caja
     caja-extensions
     python-caja
-    caja-dropbox
-    mate-bluetooth
+    caja-dropbox   
+    atril
     engrampa
     mozo
     mate-calc
