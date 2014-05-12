@@ -29,6 +29,7 @@ Depends: ${misc:Depends},
          system-tools-backends (>= 2.9.4),
          mate-polkit,
          mate-system-tools (= ${source:Version})
+         mate-system-tools-common
 Recommends: mate-control-center
 Suggests: ntp
 Description: Cross-platform configuration utilities for MATE
