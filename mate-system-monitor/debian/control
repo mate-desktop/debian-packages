@@ -27,6 +27,7 @@ Package: mate-system-monitor
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends}
+         mate-system-monitor-common
 Recommends: libgksu2-0,
             gvfs
 Description: Process viewer and system resource monitor for MATE
