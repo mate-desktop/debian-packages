@@ -4,11 +4,14 @@
 	dh $@
 
 override_dh_install:
+	dh_pysupport
 	dh_install --list-missing
 
 override_dh_auto_configure:
+	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure -- \
-		--with-gtk=2.0
+		--with-gtk=2.0 \
+		pythondir=/usr/share/mozo
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
