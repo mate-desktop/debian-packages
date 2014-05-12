@@ -26,7 +26,7 @@ Homepage: http://www.mate-desktop.org/
 Package: mate-system-monitor
 Architecture: any
 Depends: ${shlibs:Depends},
-         ${misc:Depends}
+         ${misc:Depends},
          mate-system-monitor-common (= ${source:Version})
 Recommends: libgksu2-0,
             gvfs
