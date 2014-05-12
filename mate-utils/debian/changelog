@@ -1,3 +1,9 @@
+mate-utils (1.8.0-1) unstable; urgency=low
+
+  * mate-utils: add mate-desktop-common dependency
+
+ -- Frédéric Gaudet <fred@linuxmint.com>  Mon, 12 May 2014 10:27:17 +0200
+
 mate-utils (1.8.0-0) unstable; urgency=low
 
   * New upstream release
