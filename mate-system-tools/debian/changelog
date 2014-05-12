@@ -1,3 +1,9 @@
+mate-system-tools (1.8.0-1) unstable; urgency=low
+
+  * mate-system-tools: add mate-system-tools-common dependency
+
+ -- Frédéric Gaudet <fred@linuxmint.com>  Mon, 12 May 2014 09:56:42 +0200
+
 mate-system-tools (1.8.0-0) unstable; urgency=low
 
   * New upstream release
