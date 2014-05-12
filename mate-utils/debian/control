@@ -27,6 +27,7 @@ Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          mate-utils-common (= ${source:Version})
+         mate-desktop-common
 Description: MATE desktop utilities
  This package contains all the tools bundled the MATE utilities:
   - mate-disk-usage-analyzer, a disk usage analyser
