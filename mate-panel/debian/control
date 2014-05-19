@@ -109,10 +109,13 @@ Depends: ${shlibs:Depends},
 Breaks: mate-panel (<= 1.0.0-3), 
         libmatepanelapplet,
         libmate-panel-applet4-1,
+        libmate-panel-applet-4-1
 Replaces: libmatepanelapplet,
           libmate-panel-applet4-1,
+          libmate-panel-applet-4-1
 Provides: libmatepanelapplet,
           libmate-panel-applet4-1,
+          libmate-panel-applet-4-1
 Description: library for MATE Panel applets
  The MATE Panel is an essential part of the MATE Desktop, providing
  toolbar-like “panels” which can be attached to the sides of your desktop.
