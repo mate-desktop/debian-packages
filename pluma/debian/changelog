@@ -1,3 +1,9 @@
+pluma (1.8.1) qiana; urgency=low
+
+  * New upstream release
+
+ -- Frédéric Gaudet <fred@linuxmint.com>  Thu, 22 May 2014 09:33:24 +0200
+
 pluma (1.8.0-0) unstable; urgency=low
 
   * New upstream release
