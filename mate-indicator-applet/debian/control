@@ -22,6 +22,7 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-panel
+Conflicts: indicator-applet-complete
 Recommends: indicator-messages-gtk2
 Suggests: indicator-application-gtk2,
           indicator-sound-gtk2
