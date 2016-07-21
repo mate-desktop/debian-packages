@@ -43,6 +43,11 @@ for i in range(0, len(args)):
     os.system("cp -R ~/mate/debian-packages/%s/debian/ ." % package)
     os.system("echo '3.0 (native)' > debian/source/format")
 
+    # discover and install build dependencies
+    os.system("mk-build-deps")
+    os.system("sudo dpkg -i *.deb")
+    os.system("sudo apt-get install -y -f")
+
     # debian/changelog
     date = datetime.date.today().strftime("%Y%m%d")
     head = subprocess.check_output(["git", "rev-parse", "HEAD"])[:7]
