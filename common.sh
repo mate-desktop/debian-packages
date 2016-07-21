@@ -5,13 +5,15 @@ PACKAGES="mate-common
           mate-icon-theme
           caja
           marco
+          libmatemixer
           mate-settings-daemon
           mate-session-manager
           mate-menus
           mate-panel
           mate-control-center"
 
-EXTRA_PACKAGES="mate-notification-daemon
+EXTRA_PACKAGES="caja-extensions
+                mate-notification-daemon
                 mate-backgrounds
                 mate-themes
                 mate-polkit
