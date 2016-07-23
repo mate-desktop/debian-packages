@@ -29,7 +29,9 @@ folders forcing them to using all GTK3 dependencies:
 
 To build all of MATE with the latest tagged version do the following:
 
-1. git clone this repository into ~/mate
-2. cd into ~/mate
-3. run './debian-packages/build.sh'
+1. sudo apt install build-essential devscripts equivs python-gpgme
+2. mkdir ~/mate
+3. git clone this repository into ~/mate/debian-packages
+4. cd into ~/mate
+5. run './debian-packages/build.sh'
 
