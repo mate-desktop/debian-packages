@@ -10,6 +10,7 @@ import sys
 parser = optparse.OptionParser()
 parser.add_option("-s", "--source", dest="source", action="store_true", help="Build source package")
 parser.add_option("-i", "--i386", dest="i386", action="store_true", help="Build i386 binary package")
+parser.add_option("-d", "--install-deps", dest="install_deps", action="store_true", help="Install development dependencies")
 (options, args) = parser.parse_args()
 
 if len(args) == 0:
@@ -44,9 +45,10 @@ for i in range(0, len(args)):
     os.system("echo '3.0 (native)' > debian/source/format")
 
     # discover and install build dependencies
-    os.system("mk-build-deps")
-    os.system("sudo dpkg -i *.deb")
-    os.system("sudo apt-get install -y -f")
+    if options.install_deps:
+        os.system("mk-build-deps")
+        os.system("sudo dpkg -i *.deb")
+        os.system("sudo apt-get install -y -f")
 
     # debian/changelog
     date = datetime.date.today().strftime("%Y%m%d")
