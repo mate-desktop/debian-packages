@@ -26,3 +26,12 @@ If you want to build packages with GTK3, use setgtk.py to edit debian/
 folders forcing them to using all GTK3 dependencies:
 
     ./setgtk.py --all --gtk3
+
+To build all of MATE with the latest tagged version do the following:
+
+1. sudo apt install build-essential devscripts equivs python-gpgme libtool-bin
+2. mkdir ~/mate
+3. git clone this repository into ~/mate/debian-packages
+4. cd into ~/mate
+5. run './debian-packages/build.sh'
+

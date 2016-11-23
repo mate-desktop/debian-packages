@@ -1,0 +1,38 @@
+PACKAGES="mate-common
+          mate-desktop
+          libmatekbd
+          libmateweather
+          mate-icon-theme
+          caja
+          marco
+          libmatemixer
+          mate-settings-daemon
+          mate-session-manager
+          mate-menus
+          mate-panel
+          mate-control-center"
+
+EXTRA_PACKAGES="caja-extensions
+                mate-notification-daemon
+                mate-backgrounds
+                mate-themes
+                mate-polkit
+                pluma
+                mate-terminal
+                mate-screensaver
+                mate-utils
+                mate-system-monitor
+                eom
+                engrampa
+                atril
+                mate-user-share
+                mate-media
+                mate-power-manager
+                python-caja
+                mozo
+                mate-applets
+                mate-sensors-applet
+                mate-icon-theme-faenza
+                mate-indicator-applet
+                caja-dropbox"
+
