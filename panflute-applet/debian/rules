@@ -1,0 +1,18 @@
+#! /usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/gnome.mk
+
+binary-install/panflute-daemon::
+	dh_pysupport -p$(cdbs_curpkg)
+
+binary-install/panflute-applet::
+	dh_pysupport -p$(cdbs_curpkg)
+
+binary-install/panflute-tests::
+	dh_pysupport -p$(cdbs_curpkg)
+
+DEB_CONFIGURE_EXTRA_FLAGS += --libexecdir=/usr/lib/mate-applets
+DEB_CONFIGURE_EXTRA_FLAGS += --with-mateconf-schema-file-dir=/usr/share/mateconf/schemas
+
+DEB_INSTALL_DOCS_ALL += AUTHORS NEWS README THANKS

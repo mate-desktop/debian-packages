@@ -1,0 +1,78 @@
+panflute (0.8.0-0ubuntu0) precise; urgency=low
+
+  * Convert everything to mate.
+
+ -- Benjamin Valentin <benpicco@zedat.fu-berlin.de>  Sat, 07 Jan 2012 20:58:47 +0100
+
+panflute (0.7.0-0ubuntu0~lucid2) lucid; urgency=low
+
+  * Replace dependency on obsolete python-gnome2-desktop package.  Fixes:
+    lp:669390
+
+ -- Paul Kuliniewicz <paul@kuliniewicz.org>  Thu, 04 Nov 2010 20:37:29 -0400
+
+panflute (0.7.0-0ubuntu0~lucid1) lucid; urgency=low
+
+  * New upstream release.
+  * Added panflute-tests package for test and debugging tools.
+  * Bump standards version to 3.8.4.0; no changes.
+
+ -- Paul Kuliniewicz <paul@kuliniewicz.org>  Sun, 31 Oct 2010 12:41:18 -0400
+
+panflute (0.6.2-0ubuntu0~karmic1) karmic; urgency=low
+
+  * New upstream release.
+
+ -- Paul Kuliniewicz <paul@kuliniewicz.org>  Sun, 14 Mar 2010 20:22:30 -0400
+
+panflute (0.6.1-0ubuntu0~karmic1) karmic; urgency=low
+
+  * New upstream release. 
+
+ -- Paul Kuliniewicz <paul@kuliniewicz.org>  Sun, 31 Jan 2010 15:05:12 -0500
+
+panflute (0.6.0-0ubuntu0~karmic2) karmic; urgency=low
+
+  * Include the translation files in panflute-applet.  Fixes: lp:506574
+  * Bumped standards version to 3.8.3.0; no changes.
+
+ -- Paul Kuliniewicz <paul@kuliniewicz.org>  Thu, 14 Jan 2010 21:10:13 -0500
+
+panflute (0.6.0-0ubuntu0~karmic1) karmic; urgency=low
+
+  * New upstream release. 
+  * Updated dependency list for 0.6.0.
+
+ -- Paul Kuliniewicz <paul@kuliniewicz.org>  Tue, 05 Jan 2010 22:16:53 -0500
+
+panflute (0.5.3-0ubuntu0~karmic1) karmic; urgency=low
+
+  * New upstream release.
+
+ -- Paul Kuliniewicz <paul@kuliniewicz.org>  Sat, 07 Nov 2009 20:58:36 -0500
+
+panflute (0.5.2-0ubuntu0~ppa1) jaunty; urgency=low
+
+  * New upstream release.
+
+ -- Paul Kuliniewicz <paul@kuliniewicz.org>  Sat, 31 Oct 2009 11:52:59 -0400
+
+panflute (0.5.1-0ubuntu0~ppa1) jaunty; urgency=low
+
+  * New upstream release.
+
+ -- Paul Kuliniewicz <paul@kuliniewicz.org>  Sat, 17 Oct 2009 20:24:03 -0400
+
+panflute (0.5.0-0ubuntu0~ppa2) jaunty; urgency=low
+
+  * Add dependency on python-numpy, to prevent a PyGTK-triggered crash once a
+    music player is available.  Fixes: lp:441527
+  * Add line breaks to Depends: et al fields in debian/control.
+
+ -- Paul Kuliniewicz <paul@kuliniewicz.org>  Thu, 08 Oct 2009 21:47:41 -0400
+
+panflute (0.5.0-0ubuntu0~ppa1) jaunty; urgency=low
+
+  * Initial release.
+
+ -- Paul Kuliniewicz <paul@kuliniewicz.org>  Mon, 21 Sep 2009 21:02:00 -0400
