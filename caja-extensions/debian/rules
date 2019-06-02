@@ -7,7 +7,7 @@ DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/buildflags.mk
 
 %:
-	dh $@ $(DHFLAGS)
+	dh $@ $(DHFLAGS) --without autoreconf
 
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/caja-sendto/plugins/*.la
