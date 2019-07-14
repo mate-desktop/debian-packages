@@ -11,7 +11,7 @@ Standards-Version: 3.9.7
 Build-Depends: debhelper (>= 11),
                dpkg-dev (>= 1.16.1.1),
                intltool,
-               libcpufreq-dev,
+               libcpupower-dev,
                libdbus-1-dev,
                libdbus-glib-1-dev,
                libglib2.0-dev,
